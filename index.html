@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CableVision - Your Cable & TV Service Provider</title>
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/8576/8576325.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./assets/styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="bi bi-tv me-2"></i>CableVision
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="shop.html">Shop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link position-relative">
+                            <i class="bi bi-cart3 "></i>
+                            <span class="position-absolute top-30 start-100 translate-middle badge rounded-pill bg-danger fw-semibold px-1.5 py-1.5" style="font-size: 0.65rem;">
+                                0
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero-carousel">
+        <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+            <!-- Carousel Indicators -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            </div>
+            
+            <!-- Carousel Items -->
+            <div class="carousel-inner">
+                <!-- First Slide -->
+                <div class="carousel-item active" style="background-image: url('https://www.cnet.com/a/img/resize/6db5855aca88201b3507338255ad326faf141ab6/hub/2022/11/01/ea749484-db58-45a0-9540-37b45baf0020/apple-tv-4k-streaming-box-5111.jpg?auto=webp&width=1200');">
+                    <div class="carousel-caption text-center">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <h1 class="display-4 fw-bold">Your Ultimate Cable & TV Experience</h1>
+                                    <p class="lead">Access hundreds of channels, on-demand content, and streaming services all in one place</p>
+                                    <a href="#packages" class="btn btn-primary btn-lg mt-3">View Packages</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Second Slide -->
+                <div class="carousel-item" style="background-image: url('https://static1.howtogeekimages.com/wordpress/wp-content/uploads/2024/03/a-tv-with-the-apple-tv-and-netflix-logos-on-the-screen-with-a-hand-holding-a-remote-control-on-the-right-side.jpg'); filter: brightness(100%);">
+                    <div class="carousel-caption text-center">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <h1 class="display-4 fw-bold">Premium Entertainment Anywhere</h1>
+                                    <p class="lead">Stream your favorite shows on any device with our cutting-edge technology</p>
+                                    <a href="#trial" class="btn btn-primary btn-lg me-3 mt-3">Free Trial</a>
+                                    <a href="#learn-more" class="btn btn-outline-light btn-lg mt-3">Learn More</a>
+                                </div>
+                            </div>
+                            
+                            <div class="row features-row justify-content-center">
+                                <div class="col-md-4 feature-item">
+                                    <div class="feature-icon">
+                                        <i class="bi bi-tv"></i>
+                                    </div>
+                                    <h3 class="feature-title h5">4K Ultra HD</h3>
+                                    <p class="feature-text small">Experience stunning picture quality</p>
+                                </div>
+                                <div class="col-md-4 feature-item">
+                                    <div class="feature-icon">
+                                        <i class="bi bi-cloud-download"></i>
+                                    </div>
+                                    <h3 class="feature-title h5">Cloud DVR</h3>
+                                    <p class="feature-text small">Record and watch later</p>
+                                </div>
+                                <div class="col-md-4 feature-item">
+                                    <div class="feature-icon">
+                                        <i class="bi bi-phone"></i>
+                                    </div>
+                                    <h3 class="feature-title h5">Mobile App</h3>
+                                    <p class="feature-text small">Watch on any device</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Carousel Controls -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Features Section -->
+    <section class="features-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 justify-content-center d-flex"> <h2 class="section-title mb-5">Why Choose CableVision?</h2> </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card feature-card">
+                        <img src="https://i.pcmag.com/imagery/reviews/05cItXL96l4LE9n02WfDR0h-5..v1582751026.png" class="feature-img" alt="Person watching HD TV" style="width: 400px; height: 280px;">
+                        <div class="feature-content">
+                            <div class="feature-category">PREMIUM QUALITY</div>
+                            <h2 class="feature-title">High-Definition Channels</h2>
+                            <a href="#" class="learn-more">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 mb-4">
+                    <div class="card feature-card">
+                        <img src="https://www.scdn.co/i/_global/open-graph-default.png" class="feature-img" alt="Person with reliable internet connection" style="width: 400px; height: 280px;">
+                        <div class="feature-content">
+                            <div class="feature-category">ALWAYS CONNECTED</div>
+                            <h2 class="feature-title">Reliable Connection</h2>
+                            <a href="#" class="learn-more">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 mb-4">
+                    <div class="card feature-card">
+                        <img src="https://m.media-amazon.com/images/I/61rYWQU3MpL.jpg" class="feature-img" alt="Person watching on mobile device" style="width: 400px; height: 280px;">
+                        <div class="feature-content">
+                            <div class="feature-category">EXCLUSIVE ACCESS</div>
+                            <h2 class="feature-title">Watch Anywhere</h2>
+                            <a href="#" class="learn-more">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-12">
+                    <h2 class="section-title mb-5">Featured Products</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="product-card">
+                        <div class="product-img-container">
+                            <img src="https://cordcuttersnews.com/wp-content/uploads/2021/06/Site-Apple-TV-Top.jpg" alt="4K Smart TV" class="img-fluid w-100">
+                            <span class="badge bg-danger product-badge">Sale</span>
+                        </div>
+                        <div class="card-body p-4">
+                            <h3 class="h5 mb-2">4K Ultra HD Smart TV</h3>
+                            <div class="product-rating mb-2">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-half"></i>
+                                <span class="ms-2 text-muted">(128)</span>
+                            </div>
+                            <p class="text-muted mb-3">Experience stunning picture quality with this 55" 4K Ultra HD Smart TV with built-in streaming apps.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="product-price">$499.99</span>
+                                <a href="#" class="btn btn-primary btn-sm add-to-cart">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="product-card">
+                        <div class="product-img-container">
+                            <img src="https://cigars.roku.com/v1/http%3A%2F%2Fimage.roku.com%2Fw%2Frapid%2Fimages%2Fundefined%2F5e00a729-e59b-4ca0-9da7-33938dc114c7.png" alt="Streaming Device" class="img-fluid w-100">
+                        </div>
+                        <div class="card-body p-4">
+                            <h3 class="h5 mb-2">Premium Streaming Device</h3>
+                            <div class="product-rating mb-2">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star"></i>
+                                <span class="ms-2 text-muted">(86)</span>
+                            </div>
+                            <p class="text-muted mb-3">Stream your favorite content in 4K with this easy-to-use streaming device with voice control.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="product-price">$79.99</span>
+                                <a href="#" class="btn btn-primary btn-sm add-to-cart">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="product-card">
+                        <div class="product-img-container">
+                            <img src="https://cdn.mos.cms.futurecdn.net/CqdZQGyxtFP2R6P3whZpYG.jpg" alt="Wireless Soundbar" class="img-fluid w-100">
+                            <span class="badge bg-primary product-badge">New</span>
+                        </div>
+                        <div class="card-body p-4">
+                            <h3 class="h5 mb-2">Wireless Soundbar System</h3>
+                            <div class="product-rating mb-2">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <span class="ms-2 text-muted">(42)</span>
+                            </div>
+                            <p class="text-muted mb-3">Enhance your TV audio experience with this wireless soundbar and subwoofer system.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="product-price">$199.99</span>
+                                <a href="#" class="btn btn-primary btn-sm add-to-cart">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <a href="shop.html" class="btn btn-outline-primary">View All Products</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Packages Section -->
+    <section id="packages" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">Our Packages</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-header text-center bg-primary text-white">
+                            <h3 class="h4 mb-0">Basic Package</h3>
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title pricing-card-title text-center">$39.99 <small class="text-muted">/ month</small></h4>
+                            <ul class="list-unstyled mt-4">
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>50+ HD Channels</li>
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Basic On-Demand Library</li>
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Standard DVR (40 hours)</li>
+                                <li class="mb-2"><i class="bi bi-x-circle-fill text-danger me-2"></i>Premium Movie Channels</li>
+                                <li class="mb-2"><i class="bi bi-x-circle-fill text-danger me-2"></i>Sports Packages</li>
+                            </ul>
+                            <div class="text-center mt-4">
+                                <a href="#" class="btn btn-outline-primary">Subscribe Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 border-primary">
+                        <div class="card-header text-center bg-primary text-white">
+                            <h3 class="h4 mb-0">Standard Package</h3>
+                            <span class="badge bg-warning mt-2">Most Popular</span>
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title pricing-card-title text-center">$59.99 <small class="text-muted">/ month</small></h4>
+                            <ul class="list-unstyled mt-4">
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>120+ HD Channels</li>
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Extended On-Demand Library</li>
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Enhanced DVR (100 hours)</li>
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Premium Movie Channels</li>
+                                <li class="mb-2"><i class="bi bi-x-circle-fill text-danger me-2"></i>Sports Packages</li>
+                            </ul>
+                            <div class="text-center mt-4">
+                                <a href="#" class="btn btn-primary">Subscribe Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-header text-center bg-primary text-white">
+                            <h3 class="h4 mb-0">Premium Package</h3>
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title pricing-card-title text-center">$89.99 <small class="text-muted">/ month</small></h4>
+                            <ul class="list-unstyled mt-4">
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>200+ HD & 4K Channels</li>
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Complete On-Demand Library</li>
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Unlimited DVR Storage</li>
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>All Premium Movie Channels</li>
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>All Sports Packages Included</li>
+                            </ul>
+                            <div class="text-center mt-4">
+                                <a href="#" class="btn btn-outline-primary">Subscribe Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="promo-container">
+            <div class="promo-slider">
+
+                <div class="promo-item">FREE DELIVERY FOR ORDER OVER $120</div>
+                <div class="promo-star">★</div>
+                <div class="promo-item">SIGN UP AND GET 10% OFF YOUR FIRST ORDER</div>
+                <div class="promo-star">★</div>
+                <div class="promo-item">FREE DELIVERY FOR ORDER OVER $120</div>
+                <div class="promo-star">★</div>
+                <div class="promo-item">FREE DELIVERY FOR ORDER OVER $120</div>
+                <div class="promo-star">★</div>
+
+                <div class="promo-item">FREE DELIVERY FOR ORDER OVER $120</div>
+                <div class="promo-star">★</div>
+                <div class="promo-item">SIGN UP AND GET 10% OFF YOUR FIRST ORDER</div>
+                <div class="promo-star">★</div>
+                <div class="promo-item">FREE DELIVERY FOR ORDER OVER $120</div>
+                <div class="promo-star">★</div>
+                <div class="promo-item">FREE DELIVERY FOR ORDER OVER $120</div>
+                <div class="promo-star">★</div>
+
+                <div class="promo-item">FREE DELIVERY FOR ORDER OVER $120</div>
+                <div class="promo-star">★</div>
+                <div class="promo-item">SIGN UP AND GET 10% OFF YOUR FIRST ORDER</div>
+                <div class="promo-star">★</div>
+                <div class="promo-item">FREE DELIVERY FOR ORDER OVER $120</div>
+                <div class="promo-star">★</div>
+                <div class="promo-item">FREE DELIVERY FOR ORDER OVER $120</div>
+                <div class="promo-star">★</div>
+
+                <div class="promo-item">FREE DELIVERY FOR ORDER OVER $120</div>
+                <div class="promo-star">★</div>
+                <div class="promo-item">SIGN UP AND GET 10% OFF YOUR FIRST ORDER</div>
+                <div class="promo-star">★</div>
+                <div class="promo-item">FREE DELIVERY FOR ORDER OVER $120</div>
+                <div class="promo-star">★</div>
+                <div class="promo-item">FREE DELIVERY FOR ORDER OVER $120</div>
+                <div class="promo-star">★</div>
+
+                <div class="promo-item">FREE DELIVERY FOR ORDER OVER $120</div>
+                <div class="promo-star">★</div>
+                <div class="promo-item">SIGN UP AND GET 10% OFF YOUR FIRST ORDER</div>
+                <div class="promo-star">★</div>
+                <div class="promo-item">FREE DELIVERY FOR ORDER OVER $120</div>
+                <div class="promo-star">★</div>
+                <div class="promo-item">FREE DELIVERY FOR ORDER OVER $120</div>
+                <div class="promo-star">★</div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Testimonials -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">What Our Customers Say</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="testimonial p-4 shadow-sm rounded">
+                        <div class="d-flex align-items-center mb-3">
+                            <img src="https://sortitoutsidospaces.b-cdn.net/megapacks/cutoutfaces/originals/2024.12/19302146.png" style="width: 100px; height: 100px;">
+                            <div>
+                                <h5 class="mb-0">Vini Jr</h5>
+                                <small class="text-muted">Premium Subscriber</small>
+                            </div>
+                        </div>
+                        <p class="mb-0">"The channel selection is amazing and the picture quality is outstanding. Customer service has always been helpful whenever I needed assistance."</p>
+                        <div class="mt-2">
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="testimonial p-4 shadow-sm rounded">
+                        <div class="d-flex align-items-center mb-3">
+                            <img src="https://cdn.soccerwiki.org/images/player/85260.png" style="width: 100px;">
+                            <div>
+                                <h5 class="mb-0">Kylian Mbappé </h5>
+                                <small class="text-muted">Standard Subscriber</small>
+                            </div>
+                        </div>
+                        <p class="mb-0">"I love being able to record my favorite shows and watch them later. The mobile app is also very convenient when I'm traveling."</p>
+                        <div class="mt-2">
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-half text-warning"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="testimonial p-4 shadow-sm rounded">
+                        <div class="d-flex align-items-center mb-3">
+                            <img src="https://sortitoutsidospaces.b-cdn.net/megapacks/cutoutfaces/originals/2024.10/29232937.png" style="width: 100px; height: 100px;">
+                            <div>
+                                <h5 class="mb-0">Jude Bellingham</h5>
+                                <small class="text-muted">Basic Subscriber</small>
+                            </div>
+                        </div>
+                        <p class="mb-0">"Even the basic package offers great value for money. The installation was quick and the technician was very professional and helpful."</p>
+                        <div class="mt-2">
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star text-warning"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-12">
+                    <h2 class="section-title mb-5">Our Providers</h2>
+                    <p class="lead mb-5">We partner with the best content providers to bring you a wide range of entertainment options</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 col-6 mb-4">
+                    <div class="provider-card">
+                        <div class="provider-logo">
+                            <img src="https://play-lh.googleusercontent.com/g5LB6xtddbJchpN9lwrXIiGMIS48z6aVGLU0EjxXVFQUz549wT8TtoAtLPciTXzKGsxi" alt="Provider 1" class="img-fluid" style="width: 120px; height: 60px;">
+                        </div>
+                        <div class="card-body p-3 text-center">
+                            <h3 class="h6 mb-2">StreamFlix</h3>
+                            <p class="text-muted small mb-2">Movies & TV Shows</p>
+                            <a href="#" class="btn btn-sm btn-outline-primary">View Channels</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6 mb-4">
+                    <div class="provider-card">
+                        <div class="provider-logo">
+                            <img src="https://setantasports.com/wp-content/uploads/2025/03/logoyosat.png" alt="Provider 2" class="img-fluid" style="width: 120px; height: 60px;">
+                        </div>
+                        <div class="card-body p-3 text-center">
+                            <h3 class="h6 mb-2">SportZone</h3>
+                            <p class="text-muted small mb-2">Sports & Live Events</p>
+                            <a href="#" class="btn btn-sm btn-outline-primary">View Channels</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6 mb-4">
+                    <div class="provider-card">
+                        <div class="provider-logo">
+                            <img src="https://cdn.joinhighbrow.com/content_providers/34628.jpg" alt="Provider 3" class="img-fluid" style="width: 120px; height: 60px;">
+                        </div>
+                        <div class="card-body p-3 text-center">
+                            <h3 class="h6 mb-2">KidsWorld</h3>
+                            <p class="text-muted small mb-2">Children's Programming</p>
+                            <a href="#" class="btn btn-sm btn-outline-primary">View Channels</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6 mb-4">
+                    <div class="provider-card">
+                        <div class="provider-logo">
+                            <img src="https://cdn-1.webcatalog.io/catalog/newsnow/newsnow-social-preview.png?v=1714775257381" alt="Provider 4" class="img-fluid" style="width: 120px; height: 60px;">
+                        </div>
+                        <div class="card-body p-3 text-center">
+                            <h3 class="h6 mb-2">NewsNow</h3>
+                            <p class="text-muted small mb-2">News & Documentaries</p>
+                            <a href="#" class="btn btn-sm btn-outline-primary">View Channels</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-md-3 col-6 mb-4">
+                    <div class="provider-card">
+                        <div class="provider-logo">
+                            <img src="https://marketersbyadlatina.com/uploads/img/-5774-Star-Channel.jpg" alt="Provider 5" class="img-fluid" style="width: 120px; height: 60px;">
+                        </div>
+                        <div class="card-body p-3 text-center">
+                            <h3 class="h6 mb-2">PremiumPlus</h3>
+                            <p class="text-muted small mb-2">Premium Channels</p>
+                            <a href="#" class="btn btn-sm btn-outline-primary">View Channels</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6 mb-4">
+                    <div class="provider-card">
+                        <div class="provider-logo">
+                            <img src="https://i.pcmag.com/imagery/reviews/05cItXL96l4LE9n02WfDR0h-5..v1582751026.png" alt="Provider 6" class="img-fluid">
+                        </div>
+                        <div class="card-body p-3 text-center">
+                            <h3 class="h6 mb-2">CinemaHD</h3>
+                            <p class="text-muted small mb-2">Movies & Classics</p>
+                            <a href="#" class="btn btn-sm btn-outline-primary">View Channels</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6 mb-4">
+                    <div class="provider-card">
+                        <div class="provider-logo">
+                            <img src="https://www.scdn.co/i/_global/open-graph-default.png" alt="Provider 7" class="img-fluid">
+                        </div>
+                        <div class="card-body p-3 text-center">
+                            <h3 class="h6 mb-2">MusicTV</h3>
+                            <p class="text-muted small mb-2">Music & Entertainment</p>
+                            <a href="#" class="btn btn-sm btn-outline-primary">View Channels</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6 mb-4">
+                    <div class="provider-card">
+                        <div class="provider-logo">
+                            <img src="https://thumbor.prod.vidiocdn.com/z0bKti8DoGLXjlMCCSLKYTLrBxE=/fit-in/1440x1440/filters:quality(100)/vidio-web-prod-user/uploads/user/cover/566757/globaltv-16c5e2.jpg" alt="Provider 8" class="img-fluid" style="width: 120px; height: 60px;">
+                        </div>
+                        <div class="card-body p-3 text-center">
+                            <h3 class="h6 mb-2">GlobalView</h3>
+                            <p class="text-muted small mb-2">International Channels</p>
+                            <a href="#" class="btn btn-sm btn-outline-primary">View Channels</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="hero-container">
+        <div class="hero-media">
+            <div id="imageContainer">
+                <img src="https://9to5mac.com/wp-content/uploads/sites/6/2023/08/Streaming-TV-services.jpg?quality=82&strip=all"
+                    alt="Three fashion models with stylish outfits against a white wall" class="hero-image">
+                <a href="#" class="play-button" id="playButton">
+                    <div class="play-icon"></div>
+                    <span>Play the video</span>
+                </a>
+            </div>
+            <div id="videoContainer" class="video-container hidden">
+                <iframe id="videoFrame" src="" title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+        <article class="hero-content">
+            <div class="s">
+                <h1 class="hero-title">Discover Our Product</h1>
+                <div class="youtube-link">
+                    FOLLOW US ON YOUTUBE
+                    <span class="youtube-icon"></span>
+                </div>
+            </div>
+        </article>
+    </section>
+
+    <!-- Call to Action -->
+    <!-- <section class="py-5 bg-primary text-white text-center">
+        <div class="container">
+            <h2>Ready to Enhance Your TV Experience?</h2>
+            <p class="lead">Join thousands of satisfied customers and subscribe today!</p>
+            <button class="btn btn-light btn-lg mt-3" data-bs-toggle="modal" data-bs-target="#subscribeModal">Get Started</button>
+        </div>
+    </section> -->
+
+    <section class="cta-section">
+        <!-- Animated background elements -->
+        <div class="cta-bg-elements">
+          <div class="cta-bg-element element-1"></div>
+          <div class="cta-bg-element element-2"></div>
+          <div class="cta-bg-element element-3"></div>
+        </div>
+        
+        <div class="cta-content">
+          <h2 class="cta-title">Ready to Enhance Your TV Experience?</h2>
+          <p class="cta-subtitle">Join thousands of satisfied customers and unlock a world of premium entertainment today!</p>
+          
+          <div class="cta-features">
+            <div class="cta-feature">
+              <div class="feature-icons">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+              </div>
+              <span>200+ Premium Channels</span>
+            </div>
+            
+            <div class="cta-feature">
+              <div class="feature-icons">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+              </div>
+              <span>4K Ultra HD Quality</span>
+            </div>
+            
+            <div class="cta-feature">
+              <div class="feature-icons">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+              </div>
+              <span>No Long-Term Contracts</span>
+            </div>
+          </div>
+          
+          <div class="cta-buttons">
+            <a href="#" class="cta-button-primary" data-bs-toggle="modal" data-bs-target="#subscribeModal">
+              Get Started
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+            
+            <a href="#" class="cta-button-secondary">
+              View Plans
+            </a>
+          </div>
+          
+          <div class="cta-trust">
+            <div class="trust-label">Trusted By</div>
+            <div class="trust-logos">
+              <!-- Replace with actual partner logos -->
+              <div class="trust-logo">
+                <svg width="100" height="30" viewBox="0 0 100 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="10" y="8" width="80" height="14" rx="2" fill="#64748B"/>
+                  <text x="50" y="19" font-family="Arial" font-size="10" fill="white" text-anchor="middle">Spotify</text>
+                </svg>
+              </div>
+              
+              <div class="trust-logo">
+                <svg width="100" height="30" viewBox="0 0 100 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="10" y="8" width="80" height="14" rx="2" fill="#64748B"/>
+                  <text x="50" y="19" font-family="Arial" font-size="10" fill="white" text-anchor="middle">Netflix</text>
+                </svg>
+              </div>
+              
+              <div class="trust-logo">
+                <svg width="100" height="30" viewBox="0 0 100 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="10" y="8" width="80" height="14" rx="2" fill="#64748B"/>
+                  <text x="50" y="19" font-family="Arial" font-size="10" fill="white" text-anchor="middle">Net Geo Wild</text>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    <!-- Subscribe Modal -->
+    <div class="modal fade" id="subscribeModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header bg-primary text-white">
+                    <h5 class="modal-title">Subscribe Now</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Full Name</label>
+                            <input type="text" class="form-control" id="name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email Address</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="phone" class="form-label">Phone Number</label>
+                            <input type="tel" class="form-control" id="phone" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="package" class="form-label">Select Package</label>
+                            <select class="form-select" id="package" required>
+                                <option value="">Choose a package...</option>
+                                <option value="basic">Basic Package - $39.99/month</option>
+                                <option value="standard">Standard Package - $59.99/month</option>
+                                <option value="premium">Premium Package - $89.99/month</option>
+                            </select>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Submit Request</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5><i class="bi bi-tv me-2"></i>CableVision</h5>
+                    <p>Your trusted provider of cable and television services since 2005.</p>
+                    <div class="social-icons">
+                        <a href="#" class="text-white me-2"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="text-white me-2"><i class="bi bi-twitter"></i></a>
+                        <a href="#" class="text-white me-2"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="text-white"><i class="bi bi-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-2 mb-4 mb-md-0">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-white">Home</a></li>
+                        <li><a href="about.html" class="text-white">About</a></li>
+                        <li><a href="contact.html" class="text-white">Contact</a></li>
+                        <li><a href="#" class="text-white">Packages</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 mb-4 mb-md-0">
+                    <h5>Support</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white">Help Center</a></li>
+                        <li><a href="#" class="text-white">FAQs</a></li>
+                        <li><a href="#" class="text-white">Technical Support</a></li>
+                        <li><a href="#" class="text-white">Report an Issue</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>Contact Us</h5>
+                    <address>
+                        <p><i class="bi bi-geo-alt-fill me-2"></i>123 Cable Street, TV City, TC 12345</p>
+                        <p><i class="bi bi-telephone-fill me-2"></i>(123) 456-7890</p>
+                        <p><i class="bi bi-envelope-fill me-2"></i>info@cablevision.com</p>
+                    </address>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0">&copy; 2023 CableVision. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <p class="mb-0">
+                        <a href="#" class="text-white">Privacy Policy</a> | 
+                        <a href="#" class="text-white">Terms of Service</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>

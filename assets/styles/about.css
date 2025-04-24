@@ -1,0 +1,43 @@
+/*Promo*/
+
+.promo-containers {
+    position: relative;
+    width: 100%;
+    height: 70px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #eaeaea;
+    border-top: 1px solid #eaeaea;
+    overflow: hidden;
+
+}
+
+.promo-slider {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    animation: slide 100s linear infinite;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.promo-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 40px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #333;
+    letter-spacing: 0.5px;
+}
+
+.promo-star {
+    margin: 0 10px;
+    font-size: 25px;
+    color: #333;
+}
+
+.promo-containers:hover .promo-slider {
+    animation-play-state: paused !important;
+}

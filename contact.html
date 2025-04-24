@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - CableVision</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./assets/styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+        <link rel="stylesheet" href="./assets/styles/contact.css">
+        <link rel="stylesheet" href="./assets/styles/footer.css">
+        <link rel="stylesheet" href="./assets/styles/header.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <span>📺</span>CableVision
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="shop.html">Shop</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#" class="nav-link position-relative">
+                            <i class="bi bi-cart3 "></i>
+                            <span class="position-absolute top-30 start-100 translate-middle badge rounded-pill bg-danger fw-semibold px-1.5 py-1.5" style="font-size: 0.65rem;">
+                                0
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+
+    <!-- <header class="page-header text-white text-center">
+        <div class="container">
+            <h1 class="display-4 fw-bold">Contact Us</h1>
+            <p class="lead">We're here to help with any questions or concerns you may have</p>
+        </div>
+    </header> -->
+
+    <section class="contact-hero">
+        <div class="hero-background"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+          <h1 class="hero-title">Contact Us</h1>
+          <p class="hero-subtitle">We're dedicated to providing exceptional support. Reach out through any of these channels and our team will assist you promptly.</p>
+          
+          <div class="contact-methods">
+            <div class="contact-card">
+              <div class="contact-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                </svg>
+              </div>
+              <h3 class="contact-card-title">Call Us</h3>
+              <p class="contact-card-text">Our support team is available 24/7 to assist with any questions or technical issues.</p>
+              <a href="tel:+11234567890" class="contact-link">
+                (123) 456-7890
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+            </div>
+            
+            <div class="contact-card">
+              <div class="contact-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+              </div>
+              <h3 class="contact-card-title">Email Us</h3>
+              <p class="contact-card-text">Send us an email and we'll get back to you within 24 hours with a detailed response.</p>
+              <a href="mailto:support@cablevision.com" class="contact-link">
+                support@cablevision.com
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+            </div>
+            
+            <div class="contact-card">
+              <div class="contact-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                </svg>
+              </div>
+              <h3 class="contact-card-title">Live Chat</h3>
+              <p class="contact-card-text">Connect with a representative instantly through our live chat for immediate assistance.</p>
+              <a href="#" class="contact-link">
+                Start Chat
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+            </div>
+          </div>
+          
+          <a href="#contact-form" class="cta-button">Send Us a Message</a>
+        </div>
+      </section>
+
+    <!-- Contact Information -->
+    <!-- <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <div class="contact-card text-center p-4 shadow-sm rounded h-100">
+                        <div class="contact-icon bg-primary text-white rounded-circle mb-3">
+                            <i class="bi bi-telephone"></i>
+                        </div>
+                        <h3 class="h4">Call Us</h3>
+                        <p class="mb-2">Customer Service:</p>
+                        <p class="text-primary fw-bold mb-2">(123) 456-7890</p>
+                        <p class="mb-2">Technical Support:</p>
+                        <p class="text-primary fw-bold mb-2">(123) 456-7891</p>
+                        <p class="text-muted">Available 24/7</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <div class="contact-card text-center p-4 shadow-sm rounded h-100">
+                        <div class="contact-icon bg-primary text-white rounded-circle mb-3">
+                            <i class="bi bi-envelope"></i>
+                        </div>
+                        <h3 class="h4">Email Us</h3>
+                        <p class="mb-2">General Inquiries:</p>
+                        <p class="text-primary fw-bold mb-2">info@cablevision.com</p>
+                        <p class="mb-2">Support:</p>
+                        <p class="text-primary fw-bold mb-2">support@cablevision.com</p>
+                        <p class="mb-2">Sales:</p>
+                        <p class="text-primary fw-bold mb-2">sales@cablevision.com</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="contact-card text-center p-4 shadow-sm rounded h-100">
+                        <div class="contact-icon bg-primary text-white rounded-circle mb-3">
+                            <i class="bi bi-geo-alt"></i>
+                        </div>
+                        <h3 class="h4">Visit Us</h3>
+                        <p class="mb-2">Headquarters:</p>
+                        <p class="fw-bold mb-2">123 Cable Street<br>TV City, TC 12345</p>
+                        <p class="mb-2">Business Hours:</p>
+                        <p class="mb-0">Monday - Friday: 9AM - 6PM</p>
+                        <p class="mb-0">Saturday: 10AM - 4PM</p>
+                        <p>Sunday: Closed</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Contact Form -->
+    <!-- <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-8 text-center">
+                    <h2 class="section-title">Send Us a Message</h2>
+                    <p class="lead">Fill out the form below and we'll get back to you as soon as possible</p>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="card border-0 shadow">
+                        <div class="card-body p-4 p-md-5">
+                            <form id="contactForm">
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <label for="firstName" class="form-label">First Name</label>
+                                        <input type="text" class="form-control" id="firstName" required>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label for="lastName" class="form-label">Last Name</label>
+                                        <input type="text" class="form-control" id="lastName" required>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">Email Address</label>
+                                    <input type="email" class="form-control" id="email" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="phone" class="form-label">Phone Number</label>
+                                    <input type="tel" class="form-control" id="phone">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="subject" class="form-label">Subject</label>
+                                    <select class="form-select" id="subject" required>
+                                        <option value="" selected disabled>Select a subject</option>
+                                        <option value="general">General Inquiry</option>
+                                        <option value="support">Technical Support</option>
+                                        <option value="billing">Billing Question</option>
+                                        <option value="sales">Sales Information</option>
+                                        <option value="feedback">Feedback</option>
+                                    </select>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="message" class="form-label">Message</label>
+                                    <textarea class="form-control" id="message" rows="5" required></textarea>
+                                </div>
+                                <div class="mb-3 form-check">
+                                    <input type="checkbox" class="form-check-input" id="newsletter">
+                                    <label class="form-check-label" for="newsletter">Subscribe to our newsletter</label>
+                                </div>
+                                <div class="text-center">
+                                    <button type="submit" class="btn btn-primary btn-lg">Submit Message</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+
+    <div class="containers">
+        <main>
+            <section class="company-info">
+                <h1>Let's Collaborate</h1>
+                <p>The Best electronics products continue to drive innovation we live, work, and interact with our
+                    environment opportunities customers to test out products before making a purchase.innovation, we
+                    live, work, and interact with our environment, opportunities</p>
+
+                <div class="contact-details">
+                    <h2><span>Phone:</span> (994) 55-331-11-98</h2>
+                    <h2><span>Email:</span> aliverdiyev05@inbox.ru</h2>
+
+                    <address>
+                        <h2>Head office:</h2>
+                        <p>16/21 Azadlıq Prospekti, Bakı</p>
+                    </address>
+                </div>
+            </section>
+
+            <section class="contact-form">
+                <h2>Say hello</h2>
+                <form id="contactForm" action="#" method="POST">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Name">
+                    </div>
+
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Email">
+                    </div>
+
+                    <div class="form-group">
+                        <input type="tel" id="phone" name="phone" placeholder="Phone number">
+                    </div>
+
+                    <div class="form-group">
+                        <textarea id="message" name="message" placeholder="Message"></textarea>
+                    </div>
+
+                    <button type="submit" class="btn-send">Send Now</button>
+                </form>
+            </section>
+        </main>
+    </div>
+
+    <!-- FAQ Section -->
+    <!-- <section class="py-5">
+        <div class="container">
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-8 text-center">
+                    <h2 class="section-title">Frequently Asked Questions</h2>
+                    <p class="lead">Find quick answers to common questions</p>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="accordion" id="faqAccordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    How do I report a service outage?
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    <p>You can report a service outage by calling our 24/7 technical support line at (123) 456-7891, or by using the "Report an Issue" feature in our mobile app. Our team will work to resolve the issue as quickly as possible and keep you updated on the progress.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    How do I upgrade my current package?
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    <p>Upgrading your package is easy! You can call our customer service at (123) 456-7890, visit our website and log in to your account, or use our mobile app to view available upgrades. Our representatives will be happy to help you find the best package that suits your needs and budget.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    When will service be available in my area?
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    <p>We're constantly expanding our service areas. To check if service is available in your area or to get notified when it becomes available, please enter your address in the "Check Availability" tool on our website or contact our sales team at sales@cablevision.com.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingFour">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    How do I reset my set-top box?
+                                </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    <p>To reset your set-top box, unplug the power cord from the back of the device or from the wall outlet, wait for 30 seconds, and then plug it back in. The box will take a few minutes to reboot and reconnect to our network. If you continue to experience issues after resetting, please contact our technical support.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingFive">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                    How do I pay my bill?
+                                </button>
+                            </h2>
+                            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    <p>We offer multiple convenient payment options: online through our website or mobile app, by phone at (123) 456-7890, by mail to our headquarters address, or in person at any of our service centers. You can also set up automatic payments to ensure you never miss a payment.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Map Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-8 text-center">
+                    <h2 class="section-title">Find Us</h2>
+                    <p class="lead">Visit our headquarters or one of our service centers</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="map-container shadow">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.34710697805!2d49.85136037679367!3d40.380231034224046!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40307da7c3a641cf%3A0x53a5c1e7cc11c36f!2z0JDQt9C10YDQsdCw0LnQtNC20LDQvdGB0LrQuNC5INCT0L7RgdGD0LTQsNGA0YHRgtCy0LXQvdC90YvQuSDQo9C90LjQstC10YDRgdC40YLQtdGCINCd0LXRhNGC0Lgg0Jgg0J_RgNC-0LzRi9GI0LvQtdC90L3QvtGB0YLQuA!5e0!3m2!1sru!2saz!4v1745264916910!5m2!1sru!2saz" width="1296" height="457" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Centers -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-8 text-center">
+                    <h2 class="section-title">Service Centers</h2>
+                    <p class="lead">Visit one of our service centers for in-person assistance</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="service-center p-4 shadow-sm rounded h-100">
+                        <h3 class="h5">Downtown Center</h3>
+                        <address class="mb-3">
+                            <p class="mb-1">123 Main Street</p>
+                            <p class="mb-1">TV City, TC 12345</p>
+                            <p class="mb-1">Phone: (123) 456-7892</p>
+                        </address>
+                        <p class="mb-2"><strong>Hours:</strong></p>
+                        <p class="mb-1">Monday - Friday: 9AM - 6PM</p>
+                        <p class="mb-1">Saturday: 10AM - 4PM</p>
+                        <p>Sunday: Closed</p>
+                        <a href="#" class="btn btn-outline-primary mt-3">Get Directions</a>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="service-center p-4 shadow-sm rounded h-100">
+                        <h3 class="h5">Westside Center</h3>
+                        <address class="mb-3">
+                            <p class="mb-1">456 West Avenue</p>
+                            <p class="mb-1">TV City, TC 12346</p>
+                            <p class="mb-1">Phone: (123) 456-7893</p>
+                        </address>
+                        <p class="mb-2"><strong>Hours:</strong></p>
+                        <p class="mb-1">Monday - Friday: 9AM - 6PM</p>
+                        <p class="mb-1">Saturday: 10AM - 4PM</p>
+                        <p>Sunday: Closed</p>
+                        <a href="#" class="btn btn-outline-primary mt-3">Get Directions</a>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="service-center p-4 shadow-sm rounded h-100">
+                        <h3 class="h5">Eastside Center</h3>
+                        <address class="mb-3">
+                            <p class="mb-1">789 East Boulevard</p>
+                            <p class="mb-1">TV City, TC 12347</p>
+                            <p class="mb-1">Phone: (123) 456-7894</p>
+                        </address>
+                        <p class="mb-2"><strong>Hours:</strong></p>
+                        <p class="mb-1">Monday - Friday: 9AM - 6PM</p>
+                        <p class="mb-1">Saturday: 10AM - 4PM</p>
+                        <p>Sunday: Closed</p>
+                        <a href="#" class="btn btn-outline-primary mt-3">Get Directions</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <!-- <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5><i class="bi bi-tv me-2"></i>CableVision</h5>
+                    <p>Your trusted provider of cable and television services since 2005.</p>
+                    <div class="social-icons">
+                        <a href="#" class="text-white me-2"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="text-white me-2"><i class="bi bi-twitter"></i></a>
+                        <a href="#" class="text-white me-2"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="text-white"><i class="bi bi-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-2 mb-4 mb-md-0">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-white">Home</a></li>
+                        <li><a href="about.html" class="text-white">About</a></li>
+                        <li><a href="contact.html" class="text-white">Contact</a></li>
+                        <li><a href="#" class="text-white">Packages</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 mb-4 mb-md-0">
+                    <h5>Support</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white">Help Center</a></li>
+                        <li><a href="#" class="text-white">FAQs</a></li>
+                        <li><a href="#" class="text-white">Technical Support</a></li>
+                        <li><a href="#" class="text-white">Report an Issue</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>Contact Us</h5>
+                    <address>
+                        <p><i class="bi bi-geo-alt-fill me-2"></i>123 Cable Street, TV City, TC 12345</p>
+                        <p><i class="bi bi-telephone-fill me-2"></i>(123) 456-7890</p>
+                        <p><i class="bi bi-envelope-fill me-2"></i>info@cablevision.com</p>
+                    </address>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0">&copy; 2023 CableVision. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <p class="mb-0">
+                        <a href="#" class="text-white">Privacy Policy</a> | 
+                        <a href="#" class="text-white">Terms of Service</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer> -->
+
+    <footer class="footer">
+        <div class="container">
+          <div class="footer-content">
+            <!-- Company Info -->
+            <div class="footer-section">
+              <div class="footer-logo">
+                <div class="logo-icon">
+                  <span class="header-icon">📺</span>
+                </div>
+                <h2 class="logo-text">CableVision</h2>
+              </div>
+              <p class="footer-description">
+                Your trusted provider of premium cable and television services since 2005, delivering exceptional
+                entertainment experiences.
+              </p>
+              <div class="social-links">
+                <a href="#" class="social-link facebook" aria-label="Facebook">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                  </svg>
+                  <span class="sr-only">Facebook</span>
+                </a>
+                <a href="#" class="social-link twitter" aria-label="Twitter">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path>
+                  </svg>
+                  <span class="sr-only">Twitter</span>
+                </a>
+                <a href="#" class="social-link instagram" aria-label="Instagram">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                  </svg>
+                  <span class="sr-only">Instagram</span>
+                </a>
+                <a href="#" class="social-link youtube" aria-label="YouTube">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path>
+                    <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon>
+                  </svg>
+                  <span class="sr-only">YouTube</span>
+                </a>
+              </div>
+            </div>
+    
+            <!-- Quick Links -->
+            <div class="footer-section">
+              <h3 class="footer-heading">Quick Links</h3>
+              <ul class="footer-links">
+                <li class="footer-link-item">
+                  <a href="#" class="footer-link">Home</a>
+                </li>
+                <li class="footer-link-item">
+                  <a href="#" class="footer-link">About</a>
+                </li>
+                <li class="footer-link-item">
+                  <a href="#" class="footer-link">Contact</a>
+                </li>
+                <li class="footer-link-item">
+                  <a href="#" class="footer-link">Packages</a>
+                </li>
+                <li class="footer-link-item">
+                  <a href="#" class="footer-link">Service Areas</a>
+                </li>
+              </ul>
+            </div>
+    
+            <!-- Support -->
+            <div class="footer-section">
+              <h3 class="footer-heading">Support</h3>
+              <ul class="footer-links">
+                <li class="footer-link-item">
+                  <a href="#" class="footer-link">Help Center</a>
+                </li>
+                <li class="footer-link-item">
+                  <a href="#" class="footer-link">FAQs</a>
+                </li>
+                <li class="footer-link-item">
+                  <a href="#" class="footer-link">Technical Support</a>
+                </li>
+                <li class="footer-link-item">
+                  <a href="#" class="footer-link">Report an Issue</a>
+                </li>
+                <li class="footer-link-item">
+                  <a href="#" class="footer-link">Service Status</a>
+                </li>
+              </ul>
+            </div>
+    
+            <!-- Contact Us -->
+            <div class="footer-section">
+              <h3 class="footer-heading">Contact Us</h3>
+              <div class="contact-items">
+                <svg class="contact-icons" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+                <span >123 Cable Street, TV City</span>
+              </div>
+              <div class="contact-items">
+                <svg class="contact-icons" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                </svg>
+                <a href="tel:+11234567890" class="footer-link">(123) 456-7890</a>
+              </div>
+              <div class="contact-items">
+                <svg class="contact-icons" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+                <a href="mailto:info@cablevision.com" class="footer-link">info@cablevision.com</a>
+              </div>
+            </div>
+          </div>
+    
+          <div class="footer-bottom">
+            <p class="copyright">© <script>document.write(new Date().getFullYear())</script> CableVision. All rights reserved.</p>
+            <div class="footer-legal">
+              <a href="#" class="legal-link">Privacy Policy</a>
+              <a href="#" class="legal-link">Terms of Service</a>
+              <a href="#" class="legal-link">Accessibility</a>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
