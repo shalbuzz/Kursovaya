@@ -13,13 +13,16 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet" href="./assets/styles/footer.css">
 </head>
+
 <body>
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
         <div class="container">
             <a class="navbar-brand" href="index.html">
-                <i class="bi bi-tv me-2"></i>CableVision
+                <span>📺</span>CableVision
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
@@ -39,13 +42,14 @@
                         <a class="nav-link" href="shop.html">Shop</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link position-relative">
-                            <i class="bi bi-cart3 "></i>
-                            <span class="position-absolute top-30 start-100 translate-middle badge rounded-pill bg-danger fw-semibold px-1.5 py-1.5" style="font-size: 0.65rem;">
-                                0
-                            </span>
+                        <a href="./favorites.html" class="nav-link position-relative">
+                            <i class="bi bi-cart3"></i>
+                            <span
+                                class="cart-count-badge position-absolute top-30 start-100 translate-middle badge rounded-pill bg-danger fw-semibold px-1.5 py-1.5"
+                                style="font-size: 0.65rem;"></span>
                         </a>
                     </li>
+
                 </ul>
             </div>
         </div>
@@ -56,40 +60,50 @@
         <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
             <!-- Carousel Indicators -->
             <div class="carousel-indicators">
-                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
                 <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
             </div>
-            
+
             <!-- Carousel Items -->
             <div class="carousel-inner">
                 <!-- First Slide -->
-                <div class="carousel-item active" style="background-image: url('https://www.cnet.com/a/img/resize/6db5855aca88201b3507338255ad326faf141ab6/hub/2022/11/01/ea749484-db58-45a0-9540-37b45baf0020/apple-tv-4k-streaming-box-5111.jpg?auto=webp&width=1200');">
+                <div class="carousel-item active"
+                    style="background-image: url('https://www.cnet.com/a/img/resize/6db5855aca88201b3507338255ad326faf141ab6/hub/2022/11/01/ea749484-db58-45a0-9540-37b45baf0020/apple-tv-4k-streaming-box-5111.jpg?auto=webp&width=1200');">
                     <div class="carousel-caption text-center">
                         <div class="container">
                             <div class="row justify-content-center">
                                 <div class="col-lg-8">
                                     <h1 class="display-4 fw-bold">Your Ultimate Cable & TV Experience</h1>
-                                    <p class="lead">Access hundreds of channels, on-demand content, and streaming services all in one place</p>
+                                    <p class="lead">Access hundreds of channels, on-demand content, and streaming
+                                        services all in one place</p>
                                     <a href="#packages" class="btn btn-primary btn-lg mt-3">View Packages</a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                
+
                 <!-- Second Slide -->
-                <div class="carousel-item" style="background-image: url('https://static1.howtogeekimages.com/wordpress/wp-content/uploads/2024/03/a-tv-with-the-apple-tv-and-netflix-logos-on-the-screen-with-a-hand-holding-a-remote-control-on-the-right-side.jpg'); filter: brightness(100%);">
-                    <div class="carousel-caption text-center">
+                <div class="carousel-item"
+                    style="position: relative; background-image: url('https://static1.howtogeekimages.com/wordpress/wp-content/uploads/2024/03/a-tv-with-the-apple-tv-and-netflix-logos-on-the-screen-with-a-hand-holding-a-remote-control-on-the-right-side.jpg'); background-size: cover; background-position: center;">
+
+                    <div
+                        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.6);">
+                    </div>
+                    
+                    <div class="carousel-caption text-center" style="position: relative;">
                         <div class="container">
                             <div class="row justify-content-center">
                                 <div class="col-lg-8">
                                     <h1 class="display-4 fw-bold">Premium Entertainment Anywhere</h1>
-                                    <p class="lead">Stream your favorite shows on any device with our cutting-edge technology</p>
-                                    <a href="#trial" class="btn btn-primary btn-lg me-3 mt-3">Free Trial</a>
+                                    <p class="lead">Stream your favorite shows on any device with our cutting-edge
+                                        technology</p>
+                                    <a href="#trial" class="btn btn-primary btn-lg me-3 mt-3" style="border: 1px solid white;">Free Trial</a>
                                     <a href="#learn-more" class="btn btn-outline-light btn-lg mt-3">Learn More</a>
                                 </div>
                             </div>
-                            
+
                             <div class="row features-row justify-content-center">
                                 <div class="col-md-4 feature-item">
                                     <div class="feature-icon">
@@ -116,28 +130,30 @@
                         </div>
                     </div>
                 </div>
+
+                <!-- Carousel Controls -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
-            
-            <!-- Carousel Controls -->
-            <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div>
     </header>
 
     <!-- Features Section -->
     <section class="features-section">
         <div class="container">
             <div class="row">
-                <div class="col-12 justify-content-center d-flex"> <h2 class="section-title mb-5">Why Choose CableVision?</h2> </div>
+                <div class="col-12 justify-content-center d-flex">
+                    <h2 class="section-title mb-5">Why Choose CableVision?</h2>
+                </div>
                 <div class="col-md-4 mb-4">
                     <div class="card feature-card">
-                        <img src="https://i.pcmag.com/imagery/reviews/05cItXL96l4LE9n02WfDR0h-5..v1582751026.png" class="feature-img" alt="Person watching HD TV" style="width: 400px; height: 280px;">
+                        <img src="https://i.pcmag.com/imagery/reviews/05cItXL96l4LE9n02WfDR0h-5..v1582751026.png"
+                            class="feature-img" alt="Person watching HD TV" style="width: 400px; height: 280px;">
                         <div class="feature-content">
                             <div class="feature-category">PREMIUM QUALITY</div>
                             <h2 class="feature-title">High-Definition Channels</h2>
@@ -145,10 +161,11 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="col-md-4 mb-4">
                     <div class="card feature-card">
-                        <img src="https://www.scdn.co/i/_global/open-graph-default.png" class="feature-img" alt="Person with reliable internet connection" style="width: 400px; height: 280px;">
+                        <img src="https://www.scdn.co/i/_global/open-graph-default.png" class="feature-img"
+                            alt="Person with reliable internet connection" style="width: 400px; height: 280px;">
                         <div class="feature-content">
                             <div class="feature-category">ALWAYS CONNECTED</div>
                             <h2 class="feature-title">Reliable Connection</h2>
@@ -156,10 +173,11 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="col-md-4 mb-4">
                     <div class="card feature-card">
-                        <img src="https://m.media-amazon.com/images/I/61rYWQU3MpL.jpg" class="feature-img" alt="Person watching on mobile device" style="width: 400px; height: 280px;">
+                        <img src="https://m.media-amazon.com/images/I/61rYWQU3MpL.jpg" class="feature-img"
+                            alt="Person watching on mobile device" style="width: 400px; height: 280px;">
                         <div class="feature-content">
                             <div class="feature-category">EXCLUSIVE ACCESS</div>
                             <h2 class="feature-title">Watch Anywhere</h2>
@@ -182,7 +200,8 @@
                 <div class="col-md-4 mb-4">
                     <div class="product-card">
                         <div class="product-img-container">
-                            <img src="https://cordcuttersnews.com/wp-content/uploads/2021/06/Site-Apple-TV-Top.jpg" alt="4K Smart TV" class="img-fluid w-100">
+                            <img src="https://cordcuttersnews.com/wp-content/uploads/2021/06/Site-Apple-TV-Top.jpg"
+                                alt="4K Smart TV" class="img-fluid w-100">
                             <span class="badge bg-danger product-badge">Sale</span>
                         </div>
                         <div class="card-body p-4">
@@ -195,7 +214,8 @@
                                 <i class="bi bi-star-half"></i>
                                 <span class="ms-2 text-muted">(128)</span>
                             </div>
-                            <p class="text-muted mb-3">Experience stunning picture quality with this 55" 4K Ultra HD Smart TV with built-in streaming apps.</p>
+                            <p class="text-muted mb-3">Experience stunning picture quality with this 55" 4K Ultra HD
+                                Smart TV with built-in streaming apps.</p>
                             <div class="d-flex justify-content-between align-items-center">
                                 <span class="product-price">$499.99</span>
                                 <a href="#" class="btn btn-primary btn-sm add-to-cart">Add to Cart</a>
@@ -206,7 +226,8 @@
                 <div class="col-md-4 mb-4">
                     <div class="product-card">
                         <div class="product-img-container">
-                            <img src="https://cigars.roku.com/v1/http%3A%2F%2Fimage.roku.com%2Fw%2Frapid%2Fimages%2Fundefined%2F5e00a729-e59b-4ca0-9da7-33938dc114c7.png" alt="Streaming Device" class="img-fluid w-100">
+                            <img src="https://cigars.roku.com/v1/http%3A%2F%2Fimage.roku.com%2Fw%2Frapid%2Fimages%2Fundefined%2F5e00a729-e59b-4ca0-9da7-33938dc114c7.png"
+                                alt="Streaming Device" class="img-fluid w-100">
                         </div>
                         <div class="card-body p-4">
                             <h3 class="h5 mb-2">Premium Streaming Device</h3>
@@ -218,7 +239,8 @@
                                 <i class="bi bi-star"></i>
                                 <span class="ms-2 text-muted">(86)</span>
                             </div>
-                            <p class="text-muted mb-3">Stream your favorite content in 4K with this easy-to-use streaming device with voice control.</p>
+                            <p class="text-muted mb-3">Stream your favorite content in 4K with this easy-to-use
+                                streaming device with voice control. And very safety.</p>
                             <div class="d-flex justify-content-between align-items-center">
                                 <span class="product-price">$79.99</span>
                                 <a href="#" class="btn btn-primary btn-sm add-to-cart">Add to Cart</a>
@@ -229,7 +251,8 @@
                 <div class="col-md-4 mb-4">
                     <div class="product-card">
                         <div class="product-img-container">
-                            <img src="https://cdn.mos.cms.futurecdn.net/CqdZQGyxtFP2R6P3whZpYG.jpg" alt="Wireless Soundbar" class="img-fluid w-100">
+                            <img src="https://cdn.mos.cms.futurecdn.net/CqdZQGyxtFP2R6P3whZpYG.jpg"
+                                alt="Wireless Soundbar" class="img-fluid w-100">
                             <span class="badge bg-primary product-badge">New</span>
                         </div>
                         <div class="card-body p-4">
@@ -242,7 +265,8 @@
                                 <i class="bi bi-star-fill"></i>
                                 <span class="ms-2 text-muted">(42)</span>
                             </div>
-                            <p class="text-muted mb-3">Enhance your TV audio experience with this wireless soundbar and subwoofer system.</p>
+                            <p class="text-muted mb-3">Enhance your TV audio experience with this wireless soundbar and
+                                subwoofer system. Perfect control system.</p>
                             <div class="d-flex justify-content-between align-items-center">
                                 <span class="product-price">$199.99</span>
                                 <a href="#" class="btn btn-primary btn-sm add-to-cart">Add to Cart</a>
@@ -268,13 +292,19 @@
                             <h3 class="h4 mb-0">Basic Package</h3>
                         </div>
                         <div class="card-body">
-                            <h4 class="card-title pricing-card-title text-center">$39.99 <small class="text-muted">/ month</small></h4>
+                            <h4 class="card-title pricing-card-title text-center">$39.99 <small class="text-muted">/
+                                    month</small></h4>
                             <ul class="list-unstyled mt-4">
-                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>50+ HD Channels</li>
-                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Basic On-Demand Library</li>
-                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Standard DVR (40 hours)</li>
-                                <li class="mb-2"><i class="bi bi-x-circle-fill text-danger me-2"></i>Premium Movie Channels</li>
-                                <li class="mb-2"><i class="bi bi-x-circle-fill text-danger me-2"></i>Sports Packages</li>
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>50+ HD
+                                    Channels</li>
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Basic
+                                    On-Demand Library</li>
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Standard DVR
+                                    (40 hours)</li>
+                                <li class="mb-2"><i class="bi bi-x-circle-fill text-danger me-2"></i>Premium Movie
+                                    Channels</li>
+                                <li class="mb-2"><i class="bi bi-x-circle-fill text-danger me-2"></i>Sports Packages
+                                </li>
                             </ul>
                             <div class="text-center mt-4">
                                 <a href="#" class="btn btn-outline-primary">Subscribe Now</a>
@@ -289,13 +319,19 @@
                             <span class="badge bg-warning mt-2">Most Popular</span>
                         </div>
                         <div class="card-body">
-                            <h4 class="card-title pricing-card-title text-center">$59.99 <small class="text-muted">/ month</small></h4>
+                            <h4 class="card-title pricing-card-title text-center">$59.99 <small class="text-muted">/
+                                    month</small></h4>
                             <ul class="list-unstyled mt-4">
-                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>120+ HD Channels</li>
-                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Extended On-Demand Library</li>
-                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Enhanced DVR (100 hours)</li>
-                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Premium Movie Channels</li>
-                                <li class="mb-2"><i class="bi bi-x-circle-fill text-danger me-2"></i>Sports Packages</li>
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>120+ HD
+                                    Channels</li>
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Extended
+                                    On-Demand Library</li>
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Enhanced DVR
+                                    (100 hours)</li>
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Premium Movie
+                                    Channels</li>
+                                <li class="mb-2"><i class="bi bi-x-circle-fill text-danger me-2"></i>Sports Packages
+                                </li>
                             </ul>
                             <div class="text-center mt-4">
                                 <a href="#" class="btn btn-primary">Subscribe Now</a>
@@ -309,13 +345,19 @@
                             <h3 class="h4 mb-0">Premium Package</h3>
                         </div>
                         <div class="card-body">
-                            <h4 class="card-title pricing-card-title text-center">$89.99 <small class="text-muted">/ month</small></h4>
+                            <h4 class="card-title pricing-card-title text-center">$89.99 <small class="text-muted">/
+                                    month</small></h4>
                             <ul class="list-unstyled mt-4">
-                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>200+ HD & 4K Channels</li>
-                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Complete On-Demand Library</li>
-                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Unlimited DVR Storage</li>
-                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>All Premium Movie Channels</li>
-                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>All Sports Packages Included</li>
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>200+ HD & 4K
+                                    Channels</li>
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Complete
+                                    On-Demand Library</li>
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Unlimited DVR
+                                    Storage</li>
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>All Premium
+                                    Movie Channels</li>
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>All Sports
+                                    Packages Included</li>
                             </ul>
                             <div class="text-center mt-4">
                                 <a href="#" class="btn btn-outline-primary">Subscribe Now</a>
@@ -388,13 +430,15 @@
                 <div class="col-md-4 mb-4">
                     <div class="testimonial p-4 shadow-sm rounded">
                         <div class="d-flex align-items-center mb-3">
-                            <img src="https://sortitoutsidospaces.b-cdn.net/megapacks/cutoutfaces/originals/2024.12/19302146.png" style="width: 100px; height: 100px;">
+                            <img src="https://sortitoutsidospaces.b-cdn.net/megapacks/cutoutfaces/originals/2024.12/19302146.png"
+                                style="width: 100px; height: 100px;">
                             <div>
                                 <h5 class="mb-0">Vini Jr</h5>
                                 <small class="text-muted">Premium Subscriber</small>
                             </div>
                         </div>
-                        <p class="mb-0">"The channel selection is amazing and the picture quality is outstanding. Customer service has always been helpful whenever I needed assistance."</p>
+                        <p class="mb-0">"The channel selection is amazing and the picture quality is outstanding.
+                            Customer service has always been helpful."</p>
                         <div class="mt-2">
                             <i class="bi bi-star-fill text-warning"></i>
                             <i class="bi bi-star-fill text-warning"></i>
@@ -413,7 +457,8 @@
                                 <small class="text-muted">Standard Subscriber</small>
                             </div>
                         </div>
-                        <p class="mb-0">"I love being able to record my favorite shows and watch them later. The mobile app is also very convenient when I'm traveling."</p>
+                        <p class="mb-0">"I love being able to record my favorite shows and watch them later. The mobile
+                            app is also very convenient when I'm traveling."</p>
                         <div class="mt-2">
                             <i class="bi bi-star-fill text-warning"></i>
                             <i class="bi bi-star-fill text-warning"></i>
@@ -426,13 +471,15 @@
                 <div class="col-md-4 mb-4">
                     <div class="testimonial p-4 shadow-sm rounded">
                         <div class="d-flex align-items-center mb-3">
-                            <img src="https://sortitoutsidospaces.b-cdn.net/megapacks/cutoutfaces/originals/2024.10/29232937.png" style="width: 100px; height: 100px;">
+                            <img src="https://sortitoutsidospaces.b-cdn.net/megapacks/cutoutfaces/originals/2024.10/29232937.png"
+                                style="width: 100px; height: 100px;">
                             <div>
                                 <h5 class="mb-0">Jude Bellingham</h5>
                                 <small class="text-muted">Basic Subscriber</small>
                             </div>
                         </div>
-                        <p class="mb-0">"Even the basic package offers great value for money. The installation was quick and the technician was very professional and helpful."</p>
+                        <p class="mb-0">"Even the basic package offers great value for money. The installation was quick
+                            and the technician was very professional and helpful."</p>
                         <div class="mt-2">
                             <i class="bi bi-star-fill text-warning"></i>
                             <i class="bi bi-star-fill text-warning"></i>
@@ -451,14 +498,16 @@
             <div class="row text-center">
                 <div class="col-12">
                     <h2 class="section-title mb-5">Our Providers</h2>
-                    <p class="lead mb-5">We partner with the best content providers to bring you a wide range of entertainment options</p>
+                    <p class="lead mb-5">We partner with the best content providers to bring you a wide range of
+                        entertainment options</p>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-3 col-6 mb-4">
                     <div class="provider-card">
                         <div class="provider-logo">
-                            <img src="https://play-lh.googleusercontent.com/g5LB6xtddbJchpN9lwrXIiGMIS48z6aVGLU0EjxXVFQUz549wT8TtoAtLPciTXzKGsxi" alt="Provider 1" class="img-fluid" style="width: 120px; height: 60px;">
+                            <img src="https://play-lh.googleusercontent.com/g5LB6xtddbJchpN9lwrXIiGMIS48z6aVGLU0EjxXVFQUz549wT8TtoAtLPciTXzKGsxi"
+                                alt="Provider 1" class="img-fluid" style="width: 120px; height: 60px;">
                         </div>
                         <div class="card-body p-3 text-center">
                             <h3 class="h6 mb-2">StreamFlix</h3>
@@ -470,7 +519,8 @@
                 <div class="col-md-3 col-6 mb-4">
                     <div class="provider-card">
                         <div class="provider-logo">
-                            <img src="https://setantasports.com/wp-content/uploads/2025/03/logoyosat.png" alt="Provider 2" class="img-fluid" style="width: 120px; height: 60px;">
+                            <img src="https://setantasports.com/wp-content/uploads/2025/03/logoyosat.png"
+                                alt="Provider 2" class="img-fluid" style="width: 120px; height: 60px;">
                         </div>
                         <div class="card-body p-3 text-center">
                             <h3 class="h6 mb-2">SportZone</h3>
@@ -482,7 +532,8 @@
                 <div class="col-md-3 col-6 mb-4">
                     <div class="provider-card">
                         <div class="provider-logo">
-                            <img src="https://cdn.joinhighbrow.com/content_providers/34628.jpg" alt="Provider 3" class="img-fluid" style="width: 120px; height: 60px;">
+                            <img src="https://cdn.joinhighbrow.com/content_providers/34628.jpg" alt="Provider 3"
+                                class="img-fluid" style="width: 120px; height: 60px;">
                         </div>
                         <div class="card-body p-3 text-center">
                             <h3 class="h6 mb-2">KidsWorld</h3>
@@ -494,7 +545,8 @@
                 <div class="col-md-3 col-6 mb-4">
                     <div class="provider-card">
                         <div class="provider-logo">
-                            <img src="https://cdn-1.webcatalog.io/catalog/newsnow/newsnow-social-preview.png?v=1714775257381" alt="Provider 4" class="img-fluid" style="width: 120px; height: 60px;">
+                            <img src="https://cdn-1.webcatalog.io/catalog/newsnow/newsnow-social-preview.png?v=1714775257381"
+                                alt="Provider 4" class="img-fluid" style="width: 120px; height: 60px;">
                         </div>
                         <div class="card-body p-3 text-center">
                             <h3 class="h6 mb-2">NewsNow</h3>
@@ -508,7 +560,8 @@
                 <div class="col-md-3 col-6 mb-4">
                     <div class="provider-card">
                         <div class="provider-logo">
-                            <img src="https://marketersbyadlatina.com/uploads/img/-5774-Star-Channel.jpg" alt="Provider 5" class="img-fluid" style="width: 120px; height: 60px;">
+                            <img src="https://marketersbyadlatina.com/uploads/img/-5774-Star-Channel.jpg"
+                                alt="Provider 5" class="img-fluid" style="width: 120px; height: 60px;">
                         </div>
                         <div class="card-body p-3 text-center">
                             <h3 class="h6 mb-2">PremiumPlus</h3>
@@ -520,7 +573,8 @@
                 <div class="col-md-3 col-6 mb-4">
                     <div class="provider-card">
                         <div class="provider-logo">
-                            <img src="https://i.pcmag.com/imagery/reviews/05cItXL96l4LE9n02WfDR0h-5..v1582751026.png" alt="Provider 6" class="img-fluid">
+                            <img src="https://i.pcmag.com/imagery/reviews/05cItXL96l4LE9n02WfDR0h-5..v1582751026.png"
+                                alt="Provider 6" class="img-fluid">
                         </div>
                         <div class="card-body p-3 text-center">
                             <h3 class="h6 mb-2">CinemaHD</h3>
@@ -532,7 +586,8 @@
                 <div class="col-md-3 col-6 mb-4">
                     <div class="provider-card">
                         <div class="provider-logo">
-                            <img src="https://www.scdn.co/i/_global/open-graph-default.png" alt="Provider 7" class="img-fluid">
+                            <img src="https://www.scdn.co/i/_global/open-graph-default.png" alt="Provider 7"
+                                class="img-fluid">
                         </div>
                         <div class="card-body p-3 text-center">
                             <h3 class="h6 mb-2">MusicTV</h3>
@@ -544,7 +599,8 @@
                 <div class="col-md-3 col-6 mb-4">
                     <div class="provider-card">
                         <div class="provider-logo">
-                            <img src="https://thumbor.prod.vidiocdn.com/z0bKti8DoGLXjlMCCSLKYTLrBxE=/fit-in/1440x1440/filters:quality(100)/vidio-web-prod-user/uploads/user/cover/566757/globaltv-16c5e2.jpg" alt="Provider 8" class="img-fluid" style="width: 120px; height: 60px;">
+                            <img src="https://thumbor.prod.vidiocdn.com/z0bKti8DoGLXjlMCCSLKYTLrBxE=/fit-in/1440x1440/filters:quality(100)/vidio-web-prod-user/uploads/user/cover/566757/globaltv-16c5e2.jpg"
+                                alt="Provider 8" class="img-fluid" style="width: 120px; height: 60px;">
                         </div>
                         <div class="card-body p-3 text-center">
                             <h3 class="h6 mb-2">GlobalView</h3>
@@ -587,97 +643,100 @@
     </section>
 
     <!-- Call to Action -->
-    <!-- <section class="py-5 bg-primary text-white text-center">
-        <div class="container">
-            <h2>Ready to Enhance Your TV Experience?</h2>
-            <p class="lead">Join thousands of satisfied customers and subscribe today!</p>
-            <button class="btn btn-light btn-lg mt-3" data-bs-toggle="modal" data-bs-target="#subscribeModal">Get Started</button>
-        </div>
-    </section> -->
 
     <section class="cta-section">
         <!-- Animated background elements -->
         <div class="cta-bg-elements">
-          <div class="cta-bg-element element-1"></div>
-          <div class="cta-bg-element element-2"></div>
-          <div class="cta-bg-element element-3"></div>
+            <div class="cta-bg-element element-1"></div>
+            <div class="cta-bg-element element-2"></div>
+            <div class="cta-bg-element element-3"></div>
         </div>
-        
+
         <div class="cta-content">
-          <h2 class="cta-title">Ready to Enhance Your TV Experience?</h2>
-          <p class="cta-subtitle">Join thousands of satisfied customers and unlock a world of premium entertainment today!</p>
-          
-          <div class="cta-features">
-            <div class="cta-feature">
-              <div class="feature-icons">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <polyline points="20 6 9 17 4 12"></polyline>
-                </svg>
-              </div>
-              <span>200+ Premium Channels</span>
+            <h2 class="cta-title">Ready to Enhance Your TV Experience?</h2>
+            <p class="cta-subtitle">Join thousands of satisfied customers and unlock a world of premium entertainment
+                today!</p>
+
+            <div class="cta-features">
+                <div class="cta-feature">
+                    <div class="feature-icons">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="20 6 9 17 4 12"></polyline>
+                        </svg>
+                    </div>
+                    <span>200+ Premium Channels</span>
+                </div>
+
+                <div class="cta-feature">
+                    <div class="feature-icons">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="20 6 9 17 4 12"></polyline>
+                        </svg>
+                    </div>
+                    <span>4K Ultra HD Quality</span>
+                </div>
+
+                <div class="cta-feature">
+                    <div class="feature-icons">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="20 6 9 17 4 12"></polyline>
+                        </svg>
+                    </div>
+                    <span>No Long-Term Contracts</span>
+                </div>
             </div>
-            
-            <div class="cta-feature">
-              <div class="feature-icons">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <polyline points="20 6 9 17 4 12"></polyline>
-                </svg>
-              </div>
-              <span>4K Ultra HD Quality</span>
+
+            <div class="cta-buttons">
+                <a href="#" class="cta-button-primary" data-bs-toggle="modal" data-bs-target="#subscribeModal">
+                    Get Started
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                        <polyline points="12 5 19 12 12 19"></polyline>
+                    </svg>
+                </a>
+
+                <a href="#" class="cta-button-secondary">
+                    View Plans
+                </a>
             </div>
-            
-            <div class="cta-feature">
-              <div class="feature-icons">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <polyline points="20 6 9 17 4 12"></polyline>
-                </svg>
-              </div>
-              <span>No Long-Term Contracts</span>
+
+            <div class="cta-trust">
+                <div class="trust-label">Trusted By</div>
+                <div class="trust-logos">
+                    <div class="trust-logo">
+                        <svg width="100" height="30" viewBox="0 0 100 30" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <rect x="10" y="8" width="80" height="14" rx="2" fill="#64748B" />
+                            <text x="50" y="19" font-family="Arial" font-size="10" fill="white"
+                                text-anchor="middle">Spotify</text>
+                        </svg>
+                    </div>
+
+                    <div class="trust-logo">
+                        <svg width="100" height="30" viewBox="0 0 100 30" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <rect x="10" y="8" width="80" height="14" rx="2" fill="#64748B" />
+                            <text x="50" y="19" font-family="Arial" font-size="10" fill="white"
+                                text-anchor="middle">Netflix</text>
+                        </svg>
+                    </div>
+
+                    <div class="trust-logo">
+                        <svg width="100" height="30" viewBox="0 0 100 30" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <rect x="10" y="8" width="80" height="14" rx="2" fill="#64748B" />
+                            <text x="50" y="19" font-family="Arial" font-size="10" fill="white" text-anchor="middle">Net
+                                Geo Wild</text>
+                        </svg>
+                    </div>
+                </div>
             </div>
-          </div>
-          
-          <div class="cta-buttons">
-            <a href="#" class="cta-button-primary" data-bs-toggle="modal" data-bs-target="#subscribeModal">
-              Get Started
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <line x1="5" y1="12" x2="19" y2="12"></line>
-                <polyline points="12 5 19 12 12 19"></polyline>
-              </svg>
-            </a>
-            
-            <a href="#" class="cta-button-secondary">
-              View Plans
-            </a>
-          </div>
-          
-          <div class="cta-trust">
-            <div class="trust-label">Trusted By</div>
-            <div class="trust-logos">
-              <!-- Replace with actual partner logos -->
-              <div class="trust-logo">
-                <svg width="100" height="30" viewBox="0 0 100 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect x="10" y="8" width="80" height="14" rx="2" fill="#64748B"/>
-                  <text x="50" y="19" font-family="Arial" font-size="10" fill="white" text-anchor="middle">Spotify</text>
-                </svg>
-              </div>
-              
-              <div class="trust-logo">
-                <svg width="100" height="30" viewBox="0 0 100 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect x="10" y="8" width="80" height="14" rx="2" fill="#64748B"/>
-                  <text x="50" y="19" font-family="Arial" font-size="10" fill="white" text-anchor="middle">Netflix</text>
-                </svg>
-              </div>
-              
-              <div class="trust-logo">
-                <svg width="100" height="30" viewBox="0 0 100 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect x="10" y="8" width="80" height="14" rx="2" fill="#64748B"/>
-                  <text x="50" y="19" font-family="Arial" font-size="10" fill="white" text-anchor="middle">Net Geo Wild</text>
-                </svg>
-              </div>
-            </div>
-          </div>
         </div>
-      </section>
+    </section>
 
     <!-- Subscribe Modal -->
     <div class="modal fade" id="subscribeModal" tabindex="-1" aria-hidden="true">
@@ -685,7 +744,8 @@
             <div class="modal-content">
                 <div class="modal-header bg-primary text-white">
                     <h5 class="modal-title">Subscribe Now</h5>
-                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                     <form>
@@ -720,63 +780,163 @@
         </div>
     </div>
 
-    <!-- Footer -->
-    <footer class="bg-dark text-white py-4">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4 mb-4 mb-md-0">
-                    <h5><i class="bi bi-tv me-2"></i>CableVision</h5>
-                    <p>Your trusted provider of cable and television services since 2005.</p>
-                    <div class="social-icons">
-                        <a href="#" class="text-white me-2"><i class="bi bi-facebook"></i></a>
-                        <a href="#" class="text-white me-2"><i class="bi bi-twitter"></i></a>
-                        <a href="#" class="text-white me-2"><i class="bi bi-instagram"></i></a>
-                        <a href="#" class="text-white"><i class="bi bi-youtube"></i></a>
+   <!-- Footer -->
+
+   <footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-section">
+                <div class="footer-logo">
+                    <div class="logo-icon">
+                        <span class="header-icon">📺</span>
                     </div>
+                    <h2 class="logo-text">CableVision</h2>
                 </div>
-                <div class="col-md-2 mb-4 mb-md-0">
-                    <h5>Quick Links</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="index.html" class="text-white">Home</a></li>
-                        <li><a href="about.html" class="text-white">About</a></li>
-                        <li><a href="contact.html" class="text-white">Contact</a></li>
-                        <li><a href="#" class="text-white">Packages</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-3 mb-4 mb-md-0">
-                    <h5>Support</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="#" class="text-white">Help Center</a></li>
-                        <li><a href="#" class="text-white">FAQs</a></li>
-                        <li><a href="#" class="text-white">Technical Support</a></li>
-                        <li><a href="#" class="text-white">Report an Issue</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-3">
-                    <h5>Contact Us</h5>
-                    <address>
-                        <p><i class="bi bi-geo-alt-fill me-2"></i>123 Cable Street, TV City, TC 12345</p>
-                        <p><i class="bi bi-telephone-fill me-2"></i>(123) 456-7890</p>
-                        <p><i class="bi bi-envelope-fill me-2"></i>info@cablevision.com</p>
-                    </address>
+                <p class="footer-description">
+                    Your trusted provider of premium cable and television services since 2005, delivering
+                    exceptional
+                    entertainment experiences.
+                </p>
+                <div class="social-links">
+                    <a href="#" class="social-link facebook" aria-label="Facebook">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round">
+                            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                        </svg>
+                        <span class="sr-only">Facebook</span>
+                    </a>
+                    <a href="#" class="social-link twitter" aria-label="Twitter">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round">
+                            <path
+                                d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z">
+                            </path>
+                        </svg>
+                        <span class="sr-only">Twitter</span>
+                    </a>
+                    <a href="#" class="social-link instagram" aria-label="Instagram">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round">
+                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                        </svg>
+                        <span class="sr-only">Instagram</span>
+                    </a>
+                    <a href="#" class="social-link youtube" aria-label="YouTube">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round">
+                            <path
+                                d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z">
+                            </path>
+                            <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon>
+                        </svg>
+                        <span class="sr-only">YouTube</span>
+                    </a>
                 </div>
             </div>
-            <hr class="my-4">
-            <div class="row">
-                <div class="col-md-6 text-center text-md-start">
-                    <p class="mb-0">&copy; 2023 CableVision. All rights reserved.</p>
+
+            <!-- Quick Links -->
+            <div class="footer-section">
+                <h3 class="footer-heading">Quick Links</h3>
+                <ul class="footer-links">
+                    <li class="footer-link-item">
+                        <a href="#" class="footer-link">Home</a>
+                    </li>
+                    <li class="footer-link-item">
+                        <a href="#" class="footer-link">About</a>
+                    </li>
+                    <li class="footer-link-item">
+                        <a href="#" class="footer-link">Contact</a>
+                    </li>
+                    <li class="footer-link-item">
+                        <a href="#" class="footer-link">Packages</a>
+                    </li>
+                    <li class="footer-link-item">
+                        <a href="#" class="footer-link">Service Areas</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Support -->
+            <div class="footer-section">
+                <h3 class="footer-heading">Support</h3>
+                <ul class="footer-links">
+                    <li class="footer-link-item">
+                        <a href="#" class="footer-link">Help Center</a>
+                    </li>
+                    <li class="footer-link-item">
+                        <a href="#" class="footer-link">FAQs</a>
+                    </li>
+                    <li class="footer-link-item">
+                        <a href="#" class="footer-link">Technical Support</a>
+                    </li>
+                    <li class="footer-link-item">
+                        <a href="#" class="footer-link">Report an Issue</a>
+                    </li>
+                    <li class="footer-link-item">
+                        <a href="#" class="footer-link">Service Status</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Contact Us -->
+            <div class="footer-section">
+                <h3 class="footer-heading">Contact Us</h3>
+                <div class="contact-items">
+                    <svg class="contact-icons" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                        <circle cx="12" cy="10" r="3"></circle>
+                    </svg>
+                    <span>123 Cable Street, TV City</span>
                 </div>
-                <div class="col-md-6 text-center text-md-end">
-                    <p class="mb-0">
-                        <a href="#" class="text-white">Privacy Policy</a> | 
-                        <a href="#" class="text-white">Terms of Service</a>
-                    </p>
+                <div class="contact-items">
+                    <svg class="contact-icons" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path
+                            d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                        </path>
+                    </svg>
+                    <a href="tel:+11234567890" class="footer-link">(123) 456-7890</a>
+                </div>
+                <div class="contact-items">
+                    <svg class="contact-icons" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                        </path>
+                        <polyline points="22,6 12,13 2,6"></polyline>
+                    </svg>
+                    <a href="mailto:info@cablevision.com" class="footer-link">info@cablevision.com</a>
                 </div>
             </div>
         </div>
-    </footer>
+
+        <div class="footer-bottom">
+            <p class="copyright">©
+                <script>document.write(new Date().getFullYear())</script> CableVision. All rights reserved.
+            </p>
+            <div class="footer-legal">
+                <a href="#" class="legal-link">Privacy Policy</a>
+                <a href="#" class="legal-link">Terms of Service</a>
+                <a href="#" class="legal-link">Accessibility</a>
+            </div>
+        </div>
+    </div>
+</footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/shop.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="./assets/js/index.js"></script>
 </body>
+
 </html>

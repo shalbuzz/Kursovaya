@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us - CableVision</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/8576/8576325.png">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="./assets/styles/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,16 +14,18 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./assets/styles/about.css">
     <link rel="stylesheet" href="./assets/styles/headerAbout.css">
+    <link rel="stylesheet" href="./assets/styles/footer.css">
 </head>
+
 <body>
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
         <div class="container">
             <a class="navbar-brand" href="index.html">
-                <i class="bi bi-tv me-2"></i>CableVision
+                <span>📺</span>CableVision
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
@@ -41,11 +45,11 @@
                         <a class="nav-link" href="shop.html">Shop</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link position-relative">
-                            <i class="bi bi-cart3 "></i>
-                            <span class="position-absolute top-30 start-100 translate-middle badge rounded-pill bg-danger fw-semibold px-1.5 py-1.5" style="font-size: 0.65rem;">
-                                0
-                            </span>
+                        <a href="./favorites.html" class="nav-link position-relative">
+                            <i class="bi bi-cart3"></i>
+                            <span
+                                class="cart-count-badge position-absolute top-30 start-100 translate-middle badge rounded-pill bg-danger fw-semibold px-1.5 py-1.5"
+                                style="font-size: 0.65rem;"></span>
                         </a>
                     </li>
                 </ul>
@@ -55,67 +59,67 @@
 
     <!-- Page Header -->
 
-    <!-- <header class="page-header text-white text-center">
-        <div class="container">
-            <h1 class="display-4 fw-bold">About CableVision</h1>
-            <p class="lead">Learn about our company, mission, and the team behind your favorite TV service</p>
-        </div>
-    </header> -->
-
-
     <section class="about-hero">
         <div class="hero-background"></div>
         <div class="hero-overlay"></div>
         <div class="hero-content">
-          <h1 class="hero-title">About CableVision</h1>
-          <p class="hero-subtitle">Discover the story, mission, and passionate team behind your favorite entertainment experience. Since 2005, we've been revolutionizing how you connect with content.</p>
-          
-          <div class="stats-container">
-            <div class="stat-item">
-              <div class="stat-number">18+</div>
-              <div class="stat-label">Years of Excellence</div>
+            <h1 class="hero-title">About CableVision</h1>
+            <p class="hero-subtitle">Discover the story, mission, and passionate team behind your favorite entertainment
+                experience. Since 2005, we've been revolutionizing how you connect with content.</p>
+
+            <div class="stats-container">
+                <div class="stat-item">
+                    <div class="stat-number">18+</div>
+                    <div class="stat-label">Years of Excellence</div>
+                </div>
+
+                <div class="stat-item">
+                    <div class="stat-number">5M+</div>
+                    <div class="stat-label">Happy Subscribers</div>
+                </div>
+
+                <div class="stat-item">
+                    <div class="stat-number">200+</div>
+                    <div class="stat-label">Premium Channels</div>
+                </div>
+
+                <div class="stat-item">
+                    <div class="stat-number">24/7</div>
+                    <div class="stat-label">Customer Support</div>
+                </div>
             </div>
-            
-            <div class="stat-item">
-              <div class="stat-number">5M+</div>
-              <div class="stat-label">Happy Subscribers</div>
+
+            <a href="#our-story" class="cta-button">Explore Our Journey</a>
+
+            <div class="scroll-indicator">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 5v14"></path>
+                    <path d="M19 12l-7 7-7-7"></path>
+                </svg>
             </div>
-            
-            <div class="stat-item">
-              <div class="stat-number">200+</div>
-              <div class="stat-label">Premium Channels</div>
-            </div>
-            
-            <div class="stat-item">
-              <div class="stat-number">24/7</div>
-              <div class="stat-label">Customer Support</div>
-            </div>
-          </div>
-          
-          <a href="#our-story" class="cta-button">Explore Our Journey</a>
-          
-          <div class="scroll-indicator">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M12 5v14"></path>
-              <path d="M19 12l-7 7-7-7"></path>
-            </svg>
-          </div>
         </div>
-      </section>
-      
+    </section>
+
 
     <!-- Our Story Section -->
     <section class="py-5">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-6 mb-4 mb-lg-0">
-                    <img src="https://cdn.pixabay.com/photo/2022/01/24/22/49/netflix-6964935_960_720.jpg" alt="Company History" class="img-fluid rounded shadow">
+                    <img src="https://cdn.pixabay.com/photo/2022/01/24/22/49/netflix-6964935_960_720.jpg"
+                        alt="Company History" class="img-fluid rounded shadow">
                 </div>
                 <div class="col-lg-6 d-flex justify-content-center align-items-center flex-column">
                     <h2 class="section-title">Our Story</h2>
-                    <p>Founded in 2005, CableVision started with a simple mission: to provide high-quality television services at affordable prices. What began as a small local cable provider has grown into one of the nation's leading cable and television service companies.</p>
-                    <p>Over the years, we've expanded our service offerings to include high-speed internet, digital phone services, and streaming options, always staying at the forefront of technological advancements in the industry.</p>
-                    <p>Today, we serve over 2 million households across the country, bringing entertainment, information, and connectivity to families everywhere.</p>
+                    <p>Founded in 2005, CableVision started with a simple mission: to provide high-quality television
+                        services at affordable prices. What began as a small local cable provider has grown into one of
+                        the nation's leading cable and television service companies.</p>
+                    <p>Over the years, we've expanded our service offerings to include high-speed internet, digital
+                        phone services, and streaming options, always staying at the forefront of technological
+                        advancements in the industry.</p>
+                    <p>Today, we serve over 2 million households across the country, bringing entertainment,
+                        information, and connectivity to families everywhere.</p>
                 </div>
             </div>
         </div>
@@ -135,11 +139,16 @@
                     <div class="card h-100 border-0 shadow-sm">
                         <div class="card-body p-4">
                             <h3 class="card-title h4 mb-3">Our Mission</h3>
-                            <p class="card-text">To connect people to the content they love through reliable, innovative, and affordable cable and television services that enhance their entertainment experience.</p>
-                            <p class="card-text">We strive to be the leading provider of integrated entertainment and information services in every market we serve, delivering exceptional value to our customers and stakeholders.</p>
+                            <p class="card-text">To connect people to the content they love through reliable,
+                                innovative, and affordable cable and television services that enhance their
+                                entertainment experience.</p>
+                            <p class="card-text">We strive to be the leading provider of integrated entertainment and
+                                information services in every market we serve, delivering exceptional value to our
+                                customers and stakeholders.</p>
                         </div>
 
-                        <img src="https://media.npr.org/assets/img/2024/01/31/lk_streaming-services_grid2_wide-424c633a6838004b1e710cb19feaa75f8cf98290.png" alt="Mission" style="width: 100%; height: 80%;">
+                        <img src="https://media.npr.org/assets/img/2024/01/31/lk_streaming-services_grid2_wide-424c633a6838004b1e710cb19feaa75f8cf98290.png"
+                            alt="Mission" style="width: 100%; height: 80%;">
                     </div>
                 </div>
                 <div class="col-md-6 mb-4">
@@ -149,19 +158,23 @@
                             <ul class="list-unstyled">
                                 <li class="mb-3">
                                     <h5><i class="bi bi-star-fill text-primary me-2"></i>Customer First</h5>
-                                    <p>We put our customers at the center of everything we do, listening to their needs and continuously improving our services.</p>
+                                    <p>We put our customers at the center of everything we do, listening to their needs
+                                        and continuously improving our services.</p>
                                 </li>
                                 <li class="mb-3">
                                     <h5><i class="bi bi-lightning-fill text-primary me-2"></i>Innovation</h5>
-                                    <p>We embrace new technologies and ideas to deliver cutting-edge services that enhance the viewing experience.</p>
+                                    <p>We embrace new technologies and ideas to deliver cutting-edge services that
+                                        enhance the viewing experience.</p>
                                 </li>
                                 <li class="mb-3">
                                     <h5><i class="bi bi-shield-fill-check text-primary me-2"></i>Reliability</h5>
-                                    <p>We are committed to providing dependable service that our customers can count on day and night.</p>
+                                    <p>We are committed to providing dependable service that our customers can count on
+                                        day and night.</p>
                                 </li>
                                 <li>
                                     <h5><i class="bi bi-people-fill text-primary me-2"></i>Community</h5>
-                                    <p>We actively engage with and support the communities we serve through various initiatives and partnerships.</p>
+                                    <p>We actively engage with and support the communities we serve through various
+                                        initiatives and partnerships.</p>
                                 </li>
                             </ul>
                         </div>
@@ -189,8 +202,10 @@
                             </div>
                             <h3 class="h4 mb-0">Fiber-Optic Network</h3>
                         </div>
-                        <p>Our advanced fiber-optic network spans over 50,000 miles across the country, delivering lightning-fast speeds and crystal-clear picture quality to millions of homes.</p>
-                        <p>We continuously invest in upgrading our infrastructure to ensure we can handle the growing bandwidth demands of modern entertainment.</p>
+                        <p>Our advanced fiber-optic network spans over 50,000 miles across the country, delivering
+                            lightning-fast speeds and crystal-clear picture quality to millions of homes.</p>
+                        <p>We continuously invest in upgrading our infrastructure to ensure we can handle the growing
+                            bandwidth demands of modern entertainment.</p>
                     </div>
                 </div>
                 <div class="col-md-6 mb-4">
@@ -201,8 +216,10 @@
                             </div>
                             <h3 class="h4 mb-0">Data Centers</h3>
                         </div>
-                        <p>Our state-of-the-art data centers are strategically located throughout the country to ensure minimal latency and maximum uptime for all our services.</p>
-                        <p>These facilities are equipped with redundant power systems, advanced cooling technologies, and 24/7 security to protect our network infrastructure.</p>
+                        <p>Our state-of-the-art data centers are strategically located throughout the country to ensure
+                            minimal latency and maximum uptime for all our services.</p>
+                        <p>These facilities are equipped with redundant power systems, advanced cooling technologies,
+                            and 24/7 security to protect our network infrastructure.</p>
                     </div>
                 </div>
                 <div class="col-md-6 mb-4">
@@ -213,8 +230,10 @@
                             </div>
                             <h3 class="h4 mb-0">Set-Top Boxes</h3>
                         </div>
-                        <p>Our latest generation of set-top boxes combines powerful hardware with intuitive software to deliver a seamless viewing experience.</p>
-                        <p>Features include 4K Ultra HD support, voice control, integrated streaming apps, and advanced DVR capabilities with cloud storage options.</p>
+                        <p>Our latest generation of set-top boxes combines powerful hardware with intuitive software to
+                            deliver a seamless viewing experience.</p>
+                        <p>Features include 4K Ultra HD support, voice control, integrated streaming apps, and advanced
+                            DVR capabilities with cloud storage options.</p>
                     </div>
                 </div>
                 <div class="col-md-6 mb-4">
@@ -225,8 +244,10 @@
                             </div>
                             <h3 class="h4 mb-0">Mobile Technology</h3>
                         </div>
-                        <p>Our mobile applications allow customers to stream live TV, access on-demand content, and manage their DVR from anywhere.</p>
-                        <p>We've invested heavily in developing cross-platform solutions that work seamlessly across smartphones, tablets, smart TVs, and web browsers.</p>
+                        <p>Our mobile applications allow customers to stream live TV, access on-demand content, and
+                            manage their DVR from anywhere.</p>
+                        <p>We've invested heavily in developing cross-platform solutions that work seamlessly across
+                            smartphones, tablets, smart TVs, and web browsers.</p>
                     </div>
                 </div>
             </div>
@@ -245,8 +266,9 @@
             <div class="row">
                 <div class="col-lg-3 col-md-6 mb-4">
                     <div class="team-member text-center">
-                        <img src="https://img.freepik.com/free-photo/serious-young-african-man-standing-isolated_171337-9633.jpg?semt=ais_hybrid&w=740" alt="CEO" class="img-fluid rounded-circle mb-3 shadow">
-                        <h3 class="h5">Jennifer Williams</h3>
+                        <img src="https://img.freepik.com/free-photo/serious-young-african-man-standing-isolated_171337-9633.jpg?semt=ais_hybrid&w=740"
+                            alt="CEO" class="img-fluid rounded-circle mb-3 shadow">
+                        <h3 class="h5">Danielle De Rossi</h3>
                         <p class="text-muted">Chief Executive Officer</p>
                         <div class="social-icons">
                             <a href="#" class="text-primary me-2"><i class="bi bi-linkedin"></i></a>
@@ -256,9 +278,10 @@
                 </div>
                 <div class="col-lg-3 col-md-6 mb-4">
                     <div class="team-member text-center">
-                        <img src="https://media.istockphoto.com/id/184376069/photo/serious-young-man-blank-expression-mug-shot-portrait.jpg?s=612x612&w=0&k=20&c=hydhblxH7DSA_JgCwWrYgub8VtwXg4Kb_mOiJHKxjxQ=" alt="CTO" class="img-fluid rounded-circle mb-3 shadow" style="width: 306px; height: 205px;">
-                        <h3 class="h5">Robert Chen</h3>
-                        <p class="text-muted">Chief Technology Officer</p>
+                        <img src="https://media.istockphoto.com/id/184376069/photo/serious-young-man-blank-expression-mug-shot-portrait.jpg?s=612x612&w=0&k=20&c=hydhblxH7DSA_JgCwWrYgub8VtwXg4Kb_mOiJHKxjxQ="
+                            alt="CTO" class="img-fluid rounded-circle mb-3 shadow" style="width: 306px; height: 205px;">
+                        <h3 class="h5">Claudio Rannieri</h3>
+                        <p class="text-muted">Technology Officer</p>
                         <div class="social-icons">
                             <a href="#" class="text-primary me-2"><i class="bi bi-linkedin"></i></a>
                             <a href="#" class="text-primary"><i class="bi bi-twitter"></i></a>
@@ -267,9 +290,10 @@
                 </div>
                 <div class="col-lg-3 col-md-6 mb-4">
                     <div class="team-member text-center">
-                        <img src="https://media.istockphoto.com/id/1081381240/photo/young-smiling-african-american-man-over-white-background.jpg?s=612x612&w=0&k=20&c=T2Mq5yJ93H5jvbI87tC5RjXuGcmDdTH4GzcyOL_WRl4=" alt="COO" class="img-fluid rounded-circle mb-3 shadow" style="width: 306px; height: 205px;">
-                        <h3 class="h5">Michael Johnson</h3>
-                        <p class="text-muted">Chief Operations Officer</p>
+                        <img src="https://media.istockphoto.com/id/1081381240/photo/young-smiling-african-american-man-over-white-background.jpg?s=612x612&w=0&k=20&c=T2Mq5yJ93H5jvbI87tC5RjXuGcmDdTH4GzcyOL_WRl4="
+                            alt="COO" class="img-fluid rounded-circle mb-3 shadow" style="width: 306px; height: 205px;">
+                        <h3 class="h5">Michael Ballack</h3>
+                        <p class="text-muted">Operations Officer</p>
                         <div class="social-icons">
                             <a href="#" class="text-primary me-2"><i class="bi bi-linkedin"></i></a>
                             <a href="#" class="text-primary"><i class="bi bi-twitter"></i></a>
@@ -278,9 +302,10 @@
                 </div>
                 <div class="col-lg-3 col-md-6 mb-4">
                     <div class="team-member text-center">
-                        <img src="https://media.istockphoto.com/id/512185013/photo/close-up-portrait-of-cool-young-guy.jpg?s=612x612&w=0&k=20&c=uYJkAQaH8VFDZjksSrJWNsWzPPNeKgATWYcjgJDky0I=" alt="CMO" class="img-fluid rounded-circle mb-3 shadow" style="width: 306px; height: 205px;">
-                        <h3 class="h5">Sarah Martinez</h3>
-                        <p class="text-muted">Chief Marketing Officer</p>
+                        <img src="https://media.istockphoto.com/id/512185013/photo/close-up-portrait-of-cool-young-guy.jpg?s=612x612&w=0&k=20&c=uYJkAQaH8VFDZjksSrJWNsWzPPNeKgATWYcjgJDky0I="
+                            alt="CMO" class="img-fluid rounded-circle mb-3 shadow" style="width: 306px; height: 205px;">
+                        <h3 class="h5">David Solanke</h3>
+                        <p class="text-muted">Marketing Officer</p>
                         <div class="social-icons">
                             <a href="#" class="text-primary me-2"><i class="bi bi-linkedin"></i></a>
                             <a href="#" class="text-primary"><i class="bi bi-twitter"></i></a>
@@ -305,49 +330,56 @@
                     <div class="timeline-dot"></div>
                     <div class="timeline-content shadow-sm">
                         <h3 class="h5">2005</h3>
-                        <p>CableVision was founded with a mission to provide affordable cable TV services to local communities.</p>
+                        <p>CableVision was founded with a mission to provide affordable cable TV services to local
+                            communities.</p>
                     </div>
                 </div>
                 <div class="timeline-item">
                     <div class="timeline-dot"></div>
                     <div class="timeline-content shadow-sm">
                         <h3 class="h5">2008</h3>
-                        <p>Expanded service area to three additional states and introduced high-definition channels to our lineup.</p>
+                        <p>Expanded service area to three additional states and introduced high-definition channels to
+                            our lineup.</p>
                     </div>
                 </div>
                 <div class="timeline-item">
                     <div class="timeline-dot"></div>
                     <div class="timeline-content shadow-sm">
                         <h3 class="h5">2011</h3>
-                        <p>Launched our first digital video recorder (DVR) service, allowing customers to record and pause live TV.</p>
+                        <p>Launched our first digital video recorder (DVR) service, allowing customers to record and
+                            pause live TV.</p>
                     </div>
                 </div>
                 <div class="timeline-item">
                     <div class="timeline-dot"></div>
                     <div class="timeline-content shadow-sm">
                         <h3 class="h5">2014</h3>
-                        <p>Introduced fiber-optic technology to our network, significantly improving speed and reliability.</p>
+                        <p>Introduced fiber-optic technology to our network, significantly improving speed and
+                            reliability.</p>
                     </div>
                 </div>
                 <div class="timeline-item">
                     <div class="timeline-dot"></div>
                     <div class="timeline-content shadow-sm">
                         <h3 class="h5">2017</h3>
-                        <p>Launched our mobile app, allowing customers to stream content on their devices anywhere, anytime.</p>
+                        <p>Launched our mobile app, allowing customers to stream content on their devices anywhere,
+                            anytime.</p>
                     </div>
                 </div>
                 <div class="timeline-item">
                     <div class="timeline-dot"></div>
                     <div class="timeline-content shadow-sm">
                         <h3 class="h5">2020</h3>
-                        <p>Introduced 4K Ultra HD channels and expanded our on-demand library to include thousands of titles.</p>
+                        <p>Introduced 4K Ultra HD channels and expanded our on-demand library to include thousands of
+                            titles.</p>
                     </div>
                 </div>
                 <div class="timeline-item">
                     <div class="timeline-dot"></div>
                     <div class="timeline-content shadow-sm">
                         <h3 class="h5">2023</h3>
-                        <p>Celebrating serving over 2 million households nationwide with plans for continued expansion and innovation.</p>
+                        <p>Celebrating serving over 2 million households nationwide with plans for continued expansion
+                            and innovation.</p>
                     </div>
                 </div>
             </div>
@@ -519,65 +551,163 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-dark text-white py-4">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4 mb-4 mb-md-0">
-                    <h5><i class="bi bi-tv me-2"></i>CableVision</h5>
-                    <p>Your trusted provider of cable and television services since 2005.</p>
-                    <div class="social-icons">
-                        <a href="#" class="text-white me-2"><i class="bi bi-facebook"></i></a>
-                        <a href="#" class="text-white me-2"><i class="bi bi-twitter"></i></a>
-                        <a href="#" class="text-white me-2"><i class="bi bi-instagram"></i></a>
-                        <a href="#" class="text-white"><i class="bi bi-youtube"></i></a>
+
+   <footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-section">
+                <div class="footer-logo">
+                    <div class="logo-icon">
+                        <span class="header-icon">📺</span>
                     </div>
+                    <h2 class="logo-text">CableVision</h2>
                 </div>
-                <div class="col-md-2 mb-4 mb-md-0">
-                    <h5>Quick Links</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="index.html" class="text-white">Home</a></li>
-                        <li><a href="about.html" class="text-white">About</a></li>
-                        <li><a href="contact.html" class="text-white">Contact</a></li>
-                        <li><a href="#" class="text-white">Packages</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-3 mb-4 mb-md-0">
-                    <h5>Support</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="#" class="text-white">Help Center</a></li>
-                        <li><a href="#" class="text-white">FAQs</a></li>
-                        <li><a href="#" class="text-white">Technical Support</a></li>
-                        <li><a href="#" class="text-white">Report an Issue</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-3">
-                    <h5>Contact Us</h5>
-                    <address>
-                        <p><i class="bi bi-geo-alt-fill me-2"></i>123 Cable Street, TV City, TC 12345</p>
-                        <p><i class="bi bi-telephone-fill me-2"></i>(123) 456-7890</p>
-                        <p><i class="bi bi-envelope-fill me-2"></i>info@cablevision.com</p>
-                    </address>
+                <p class="footer-description">
+                    Your trusted provider of premium cable and television services since 2005, delivering
+                    exceptional
+                    entertainment experiences.
+                </p>
+                <div class="social-links">
+                    <a href="#" class="social-link facebook" aria-label="Facebook">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round">
+                            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                        </svg>
+                        <span class="sr-only">Facebook</span>
+                    </a>
+                    <a href="#" class="social-link twitter" aria-label="Twitter">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round">
+                            <path
+                                d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z">
+                            </path>
+                        </svg>
+                        <span class="sr-only">Twitter</span>
+                    </a>
+                    <a href="#" class="social-link instagram" aria-label="Instagram">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round">
+                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                        </svg>
+                        <span class="sr-only">Instagram</span>
+                    </a>
+                    <a href="#" class="social-link youtube" aria-label="YouTube">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round">
+                            <path
+                                d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z">
+                            </path>
+                            <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon>
+                        </svg>
+                        <span class="sr-only">YouTube</span>
+                    </a>
                 </div>
             </div>
-            <hr class="my-4">
-            <div class="row">
-                <div class="col-md-6 text-center text-md-start">
-                    <p class="mb-0">&copy; 2023 CableVision. All rights reserved.</p>
+
+            <!-- Quick Links -->
+            <div class="footer-section">
+                <h3 class="footer-heading">Quick Links</h3>
+                <ul class="footer-links">
+                    <li class="footer-link-item">
+                        <a href="#" class="footer-link">Home</a>
+                    </li>
+                    <li class="footer-link-item">
+                        <a href="#" class="footer-link">About</a>
+                    </li>
+                    <li class="footer-link-item">
+                        <a href="#" class="footer-link">Contact</a>
+                    </li>
+                    <li class="footer-link-item">
+                        <a href="#" class="footer-link">Packages</a>
+                    </li>
+                    <li class="footer-link-item">
+                        <a href="#" class="footer-link">Service Areas</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Support -->
+            <div class="footer-section">
+                <h3 class="footer-heading">Support</h3>
+                <ul class="footer-links">
+                    <li class="footer-link-item">
+                        <a href="#" class="footer-link">Help Center</a>
+                    </li>
+                    <li class="footer-link-item">
+                        <a href="#" class="footer-link">FAQs</a>
+                    </li>
+                    <li class="footer-link-item">
+                        <a href="#" class="footer-link">Technical Support</a>
+                    </li>
+                    <li class="footer-link-item">
+                        <a href="#" class="footer-link">Report an Issue</a>
+                    </li>
+                    <li class="footer-link-item">
+                        <a href="#" class="footer-link">Service Status</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Contact Us -->
+            <div class="footer-section">
+                <h3 class="footer-heading">Contact Us</h3>
+                <div class="contact-items">
+                    <svg class="contact-icons" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                        <circle cx="12" cy="10" r="3"></circle>
+                    </svg>
+                    <span>123 Cable Street, TV City</span>
                 </div>
-                <div class="col-md-6 text-center text-md-end">
-                    <p class="mb-0">
-                        <a href="#" class="text-white">Privacy Policy</a> | 
-                        <a href="#" class="text-white">Terms of Service</a>
-                    </p>
+                <div class="contact-items">
+                    <svg class="contact-icons" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path
+                            d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                        </path>
+                    </svg>
+                    <a href="tel:+11234567890" class="footer-link">(123) 456-7890</a>
+                </div>
+                <div class="contact-items">
+                    <svg class="contact-icons" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                        </path>
+                        <polyline points="22,6 12,13 2,6"></polyline>
+                    </svg>
+                    <a href="mailto:info@cablevision.com" class="footer-link">info@cablevision.com</a>
                 </div>
             </div>
         </div>
-    </footer>
+
+        <div class="footer-bottom">
+            <p class="copyright">©
+                <script>document.write(new Date().getFullYear())</script> CableVision. All rights reserved.
+            </p>
+            <div class="footer-legal">
+                <a href="#" class="legal-link">Privacy Policy</a>
+                <a href="#" class="legal-link">Terms of Service</a>
+                <a href="#" class="legal-link">Accessibility</a>
+            </div>
+        </div>
+    </div>
+</footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="./assets/js/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./assets/js/swiper.js"></script>
+    <script src="./assets/js/about.js"></script>
 
 </body>
+
 </html>

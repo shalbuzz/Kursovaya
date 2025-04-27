@@ -139,14 +139,6 @@
     align-items: center;
   }
 
- 
-  
-  @media (min-width: 768px) {
-    .footer-bottom {
-      flex-direction: row;
-    }
-  }
-  
   .copyright {
     color: #ffffff;
     font-size: 0.875rem;
@@ -157,13 +149,7 @@
     gap: 1.5rem;
     margin-top: 1rem;
   }
-  
-  @media (min-width: 768px) {
-    .footer-legal {
-      margin-top: 0;
-    }
-  }
-  
+
   .legal-link {
     color: #ffffff;
     text-decoration: none;
@@ -186,3 +172,16 @@
     white-space: nowrap;
     border-width: 0;
   }
+  
+  @media (min-width: 768px) {
+    .footer-legal {
+      margin-top: 0;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .footer-bottom {
+      flex-direction: row;
+    }
+  }
+  

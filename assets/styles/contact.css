@@ -1,12 +1,10 @@
 /* Main layout */
-
 .containers {
     width: 100%;
     max-width: 1400px;
     margin: 0 auto;
     padding: 2rem;
 }
-
 
 main {
     display: flex;
@@ -365,4 +363,12 @@ main {
     .contact-details address p {
         font-size: 16px;
     }
+}
+
+.navbar>.container{
+    display: flex !important;
+    flex-wrap: inherit !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    width: 1319px !important;
 }
