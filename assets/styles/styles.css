@@ -1570,7 +1570,7 @@ footer a:hover {
 
 @media (max-width:992px){
   .nav-link span{
-    display: none;
+    display: none !important;
   }
 }
 
@@ -1726,5 +1726,77 @@ footer a:hover {
       width: 100%;
       text-align: center;
       align-items: center;
+  }
+}
+
+@media (max-width: 1200px) {
+  .timeline {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 992px) {
+  .timeline {
+    max-width: 95%;
+  }
+
+  .timeline::after {
+    left: 30px;
+  }
+
+  .timeline-item {
+    width: 100%;
+    padding-left: 60px;
+    padding-right: 20px;
+  }
+
+  .timeline-item:nth-child(odd),
+  .timeline-item:nth-child(even) {
+    left: 0;
+    transform: translateX(30px);
+  }
+
+  .timeline-item.visible {
+    transform: translateX(0);
+  }
+
+  .timeline-item .timeline-dot {
+    left: 15px;
+    right: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .timeline {
+    padding: 0 10px;
+  }
+
+  .timeline-item {
+    padding-left: 50px;
+    padding-right: 10px;
+  }
+
+  .timeline-item .timeline-dot {
+    left: 10px;
+  }
+}
+
+@media (max-width: 576px) {
+  .timeline {
+    max-width: 50%;
+    padding: 0 5px;
+  }
+
+  .timeline::after {
+    left: 20px;
+  }
+
+  .timeline-item {
+    padding-left: 40px;
+    padding-right: 5px;
+  }
+
+  .timeline-item .timeline-dot {
+    left: 5px;
   }
 }
