@@ -1,0 +1,509 @@
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgb(255, 255, 255);
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(0, 0, 0, 0.6);
+}
+
+/* Animation for the carousel */
+.carousel-item h1,
+.carousel-item p,
+.carousel-item .btn,
+.carousel-item .feature-icon,
+.carousel-item .feature-title,
+.carousel-item .feature-text {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.carousel-item.active h1 {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.3s;
+}
+
+.carousel-item.active p {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.5s;
+}
+
+.carousel-item.active .btn {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.7s;
+}
+
+.carousel-item.active .feature-icon {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.9s;
+}
+
+.carousel-item.active .feature-title {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 1.1s;
+}
+
+.carousel-item.active .feature-text {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 1.3s;
+}
+
+.product-rating {
+    color: rgb(220, 199, 73) !important;
+}
+
+.promo-container {
+    position: relative;
+    width: 100%;
+    height: 100px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #eaeaea;
+    border-top: 1px solid #eaeaea;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.promo-slider {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    animation: slide 100s linear infinite;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.promo-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 40px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #333;
+    letter-spacing: 0.5px;
+}
+
+.promo-slider:hover {
+    animation: none;
+}
+
+.promo-containers:hover .promo-slider {
+    animation-play-state: paused;
+}
+
+.promo-star {
+    margin: 0 10px;
+    font-size: 25px;
+    color: #333;
+}
+
+.product-image {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+}
+
+.product-card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 100%;
+}
+
+.promo-container:hover .promo-slider {
+    animation-play-state: paused;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hero-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+    min-height: 80vh;
+}
+
+.hero-media {
+    flex: 1 1 65%;
+    position: relative;
+}
+
+.hero-image {
+    width: 800px;
+    height: 455px;
+    display: block;
+    cursor: pointer;
+    filter: brightness(80%);
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.play-button {
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
+    display: flex;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    font-size: 2.5rem;
+    font-weight: 500;
+    z-index: 10;
+    cursor: pointer;
+}
+
+.play-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 2px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+}
+
+.play-icon::before {
+    content: "▶";
+    color: white;
+    font-size: 20px;
+}
+
+.s {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+}
+
+.hero-content {
+    margin: 0;
+}
+
+.hero-title {
+    font-size: 3rem;
+    width: 500px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    line-height: 1.2;
+    color: #222;
+}
+
+.youtube-link {
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+.youtube-icon {
+    width: 24px;
+    height: 18px;
+    background-color: #ff0000;
+    border-radius: 4px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 8px;
+}
+
+.youtube-icon::before {
+    content: "▶";
+    color: white;
+    font-size: 10px;
+}
+
+
+.hidden {
+    display: none;
+
+}
+
+.video-container {
+    position: relative;
+    width: 90%;
+    max-width: 100%;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+}
+
+#videoFrame {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+
+/*Team section*/
+
+.team-section {
+    max-width: 1692px;
+    margin: 0 auto;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.section-header {
+    margin-bottom: 40px;
+}
+
+.section-title {
+    font-size: 2.2rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #222;
+}
+
+.section-description {
+    font-size: 1rem;
+    color: #555;
+    max-width: 650px;
+    margin: 0 auto;
+    line-height: 1.7;
+}
+
+.team-carousel.swiper {
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    margin: 20px auto;
+    width: 1400px;
+}
+
+.carousel-container {
+    display: flex;
+    transition: transform 0.3s ease;
+    padding: 10px 0;
+    width: 100%;
+}
+
+
+.team-member.swiper-slide {
+    flex: 0 0 327px;
+    width: 327px;
+    height: 445px;
+    scroll-snap-align: start;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-member.swiper-slide:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.member-image {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.member-info {
+    padding: 20px;
+    text-align: left;
+}
+
+.member-name {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #222;
+}
+
+.member-position {
+    font-size: 0.95rem;
+    color: #666;
+}
+
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    border: none;
+    cursor: pointer;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+}
+
+.carousel-button:hover {
+    background-color: #fff;
+}
+
+.prev-button {
+    left: 5px;
+}
+
+.next-button {
+    right: 5px;
+}
+
+.carousel-button svg {
+    width: 20px;
+    height: 20px;
+    fill: none;
+    stroke: #333;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+/*keyframes*/
+
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .team-carousel.swiper {
+        max-width: 1000px;
+        width: 100%;
+    }
+
+    .section-title {
+        font-size: 2rem;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .team-carousel.swiper {
+        max-width: 680px;
+    }
+
+    .section-title {
+        font-size: 1.9rem;
+    }
+
+    .member-name {
+        font-size: 1.25rem;
+    }
+
+    .next-button {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 992px) {
+
+    .section-title {
+        font-size: 1.7rem;
+    }
+
+    .member-name {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .team-carousel.swiper {
+        max-width: 327px;
+    }
+
+    .section-title {
+        font-size: 1.6rem;
+    }
+
+    .section-description {
+        font-size: 0.9rem;
+    }
+
+    .team-section {
+        padding: 40px 15px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .team-carousel.swiper {
+        max-width: 327px;
+    }
+
+    .section-title {
+        font-size: 1.5rem;
+    }
+
+    .team-section {
+        padding: 30px 10px;
+    }
+
+    .carousel-button {
+        width: 35px;
+        height: 35px;
+    }
+}
