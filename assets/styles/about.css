@@ -41,3 +41,7 @@
 .promo-containers:hover .promo-slider {
     animation-play-state: paused !important;
 }
+
+.image{
+    height: 350px !important;
+}
