@@ -150,22 +150,4 @@
   }
 }
 
-/* Responsive adjustments */
-@media (max-width: 768px) {
-  .hero-title {
-    font-size: 2.5rem;
-  }
 
-  .hero-subtitle {
-    font-size: 1.125rem;
-  }
-
-  .stats-container {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .stat-item {
-    max-width: 100%;
-  }
-}

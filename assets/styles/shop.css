@@ -117,18 +117,6 @@
         animation-delay: -5s;
     }
 
-    @keyframes float {
-
-        0%,
-        100% {
-            transform: translateY(0);
-        }
-
-        50% {
-            transform: translateY(-30px);
-        }
-    }
-
     /* Search bar */
     .search-container {
         max-width: 600px;
@@ -176,13 +164,15 @@
         color: #f8fafc;
     }
 
-    /* Responsive adjustments */
-    @media (max-width: 768px) {
-        .hero-title {
-            font-size: 3rem;
+
+    @keyframes float {
+
+        0%,
+        100% {
+            transform: translateY(0);
         }
 
-        .hero-subtitle {
-            font-size: 1.125rem;
+        50% {
+            transform: translateY(-30px);
         }
     }
